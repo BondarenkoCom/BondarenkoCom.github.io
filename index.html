@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,width=device-width">
+    <meta name="keywords" content="glasses">
+    <meta name="description" content="небольшой магазин с лучшими очками">
+    <title>Store glasses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <!-- язык -->
+        <div class="dropdown">
+            <div class="dropbtn">Language:</div>
+            <div class="dropdown-content">
+                <a href="#">Russian</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+        <!-- валюта -->
+        <div class="dropdown">
+            <div class="dropbtn">Currency:</div>
+            <div class="dropdown-content">
+                <a href="#">USD</a>
+                <a href="#">RUB</a>
+            </div>
+        </div>
+
+        <div class="nav">
+            <a href="#">Account |</a>
+            <a href="#">Wishlist |</a>
+            <a href="#">Checkout |</a>
+            <a href="#">Log in |</a>
+            <a href="#">Sign Up |</a>
+        </div>
+        <div class="submenu">
+            <h2 class="LEO">LEO SHOP</h2>
+            <div class="subChoose">
+                <a href="#">HOME</a>
+                <a href="#">WOMEN</a>
+                <a href="#">MEN</a>
+                <a href="#">OTHER</a>
+                <a href="#">PURCHASE</a>
+            </div>
+
+            <div class="search">
+                <form action="" method="get">
+                    <input name="search" placeholder="search..." type="search" class="searchWindow">
+                    <button type="submit" class="loop"></button>
+                </form>
+            </div>
+            <div class="subCoupons">
+                <a href="#"><img class="coupons" src="image/coupons.png"></a>
+                <a href="#"> <img class="basket" src="image/cart.png"></a>
+                <strong class="carts">cart (0)</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="container">
+        <button class="next" onclick="changeImage()"></button>
+        <button class="prev" onclick="changeImagePrev()"></button>
+        <img src="image/glass.png" id="image" alt="photo">
+
+        <script>
+            function changeImage() {
+                var image = document.getElementById("image");
+
+                if (image.src.match("image/glass.png")) {
+                    image.src = "image/glasses_1.jpg";
+                } else {
+                    image.src = "image/glass.png";
+                }
+
+            };
+
+            function changeImagePrev() {
+                var image = document.getElementById("image");
+
+                if (image.src.match("image/glasses_1.jpg")) {
+                    image.src = "image/glass.png";
+                } else {
+                    image.src = "image/glasses_1.jpg";
+                }
+            };
+        </script>
+
+
+        <div>
+            <h3 class="feat">FEATURED PRODUCTS</h3>
+
+            <div class="catalog">
+                <div class="item"><img src="glasses/glass1.png">
+
+                    <p class="item1">Simply glass <br><b class="money">$388.00</b>
+                    </p>
+                    <div class="circle"></div>
+
+                </div>
+                <div class="item"><img src="glasses/glass2.png">
+                    <p class="item1">Simply glass <br><b class="money">$90.00</b></p>
+                    <div class="circle"></div>
+
+                </div>
+                <div class="item"><img src="glasses/glass3.png">
+                    <p class="item1">Simply glass <br><b class="money">$300.00</b></p>
+                    <div class="circle"></div>
+                </div>
+                <div class="item"><img src="glasses/glass4.png">
+                    <p class="item1">Simply glass <br><b class="money">$180.00</b></p>
+                    <div class="circle"></div>
+                </div>
+                <div class="item"><img src="glasses/glass5.png">
+                    <p class="item1">Simply glass <br><b class="money">$278.00</b></p>
+                    <div class="circle"></div>
+                </div>
+                <div class="item"><img src="glasses/glass6.png">
+                    <p class="item1">Simply glass <br><b class="money">$378.00</b></p>
+                    <div class="circle"></div>
+                </div>
+                <div class="item"><img src="glasses/glass7.png">
+                    <p class="item1">Simply glass <br><b class="money">$500.00</b></p>
+                    <div class="circle"></div>
+                </div>
+                <div class="item"><img src="glasses/glass8.png">
+                    <p class="item1">Simply glass <br><b class="money">$200.00</b></p>
+                    <div class="circle"></div>
+                </div>
+                <div class="item"><img src="glasses/glass9.png">
+                    <p class="item1">Simply glass <br><b class="money">$370.00</b></p>
+                    <div class="circle"></div>
+                </div>
+
+
+                <div class="slider_feature">
+                    <div class="mySlides fade">
+                        <div class="number">1/3</div>
+                        <img src="image/Layer_slider_feat.png" style="width: 100%">
+                        <div class="text">text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number">1/3</div>
+                        <img src="image/F-15C.jpg" style="width: 100%">
+                        <div class="text">text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="number">1/3</div>
+                        <img src="image/road.jpeg" style="width: 100%">
+                        <div class="text">text</div>
+                    </div>
+                    <a class="prevF" onclick="plusSlides(-1)"> &#10094
+
+                    </a>
+                    <a class="nextF" onclick="plusSlides(1)">
+                        &#10095
+                    </a>
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+
+                    <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlides(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            var i;
+                            var slides = document.getElementsByClassName('mySlides');
+                            var dots = document.getElementsByClassName('dot');
+
+
+                            if (n > slides.length) {
+                                slideIndex = 1;
+                            }
+                            if (n < 1) {
+                                slideIndex = slides.length
+                            }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace("active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += "active";
+                        }
+                    </script>
+                    <div class="subscribe">
+                        <h3 class="newSlewtter">NEWSLETTERS <br>
+                            SIGNUP</h3>
+                        <p class="subText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, recusandae.</p>
+                        <div class="newsBlock"><a href="#" class="subscribeButton">subscribe</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="stuffPack">
+
+
+                <h3 class="feat">Staff Pick</h3>
+
+                <div class="catalog">
+
+                    <div class="item"><img src="glasses/Layer10.png">
+
+                        <p class="item1">Simply glass <br><b class="money">$388.00</b>
+                        </p>
+                        <div class="circle"></div>
+
+                    </div>
+
+                    <div class="item"><img src="glasses/Layer11.png">
+
+                        <p class="item1">Simply glass <br><b class="money">$388.00</b>
+                        </p>
+                        <div class="circle"></div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+     <div class="block1">
+         <div class="truckIcon"></div>
+          <p class="delivery">FREE SHIPPING ON ORDERS OVER $100</p>
+          <div class="smartIcon"><img src="image/telephone10.png" width="60" height="50">
+          <p class="smartText">CALL US! TOLL FREE-000-8888-0000</p></div>
+     </div>
+     <div class="block2"></div>
+    </div>
+
+</body>
+
+</html>
