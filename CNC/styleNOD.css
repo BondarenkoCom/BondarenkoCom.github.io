@@ -12,14 +12,7 @@ body {
 }
 
 body {
-	/*
-	по ДЗ
-	
-	background: #f8f8f8;*/
-	/*background:url(wrath.jpg); 
-	background-position: center;
-	background-size: cover;*/
-	 background:url(img/spaceBackground.png);
+	 background:url(img/spaceBack.png);
 }
 
 
