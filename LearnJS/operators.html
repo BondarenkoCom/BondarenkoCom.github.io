@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>operators</title>
+    <script src="script.js"></script>
+    <script src="variable.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="openNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>MENU</li>
+            <li><a class="colorUL" href="variable.html">знакомства с переменныими</a></li>
+            <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
+            <li><a class="colorUL" href="operators.html">операторы</a></li>
+
+
+        </ul>
+        <img class="logo" src="img/logo2.png" width=200>
+    </div>
+    <hr>
+    <div class="content">
+        <h1>основные операторы</h1>
+
+        <p>
+             есть четыре вида операторов:
+        </p>
+        <ul class="operater">
+            <li>Арифметические операторы</li>
+            <li>Операторы сравнения</li>
+            <li>Логические операторы</li>
+            <li>Побитовые операторы</li>
+        </ul>
+
+        <h2>арифметические операторы</h2>
+        <table id="mathOperaters" border="10">
+            <tr>
+                <td style="color: yellow; font-size: 20px;">ОПЕРАТОР</td>
+                <td style="color: yellow; font-size: 20px;">ОПИСАНИЕ</td>
+
+            </tr>
+            <tr>
+                <td>+</td>
+                <td>Оператор сложения.<br>(20+32) <br>
+                    <button onclick="plusFunc()"><strong class="codeText">code play</strong></button> </td>
+
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>Оператор вычитания<br>(120-32)<br>
+                    <button onclick="minusFunc()"><strong class="codeText">code play</strong></button></td>
+            </tr>
+            <tr>
+                <td>*</td>
+                <td>Оператор умножения<br>(20*32)
+                    <br>
+                    <button onclick="multFunc()"><strong class="codeText">code play</strong></button></td>
+            </tr>
+            <tr>
+                <td>/</td>
+                <td>Оператор деления<br>(120/20)<br>
+                    <button onclick="divFunc()"><strong class="codeText">code play</strong></button></td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Оператор деления с остатком<br>(17%3=5(ост 2))<br>
+                    здесь мы увидим только остаток <br>
+                    <button onclick="divOFunc()"><strong class="codeText">code play</strong></button></td>
+            </tr>
+            <tr>
+                <td>++</td>
+                <td>Оператор инкремента<br>(++5)<br>
+                    <button onclick="incFunc()"><strong class="codeText">code play</strong></button></td>
+            </tr>
+            <tr>
+                <td>--</td>
+                <td>Оператор декремента<br>(--5)<br>
+                    <button onclick="decFunc()"><strong class="codeText">code play</strong></button></td>
+            </tr>
+        </table>
+
+
+
+        <h2>операторы сравнения</h2>
+        <table id="comparisonOperaters" border="10">
+            <tr>
+                <td style="color: yellow; font-size: 20px;">ОПЕРАТОР</td>
+                <td style="color: yellow; font-size: 20px;">ОПИСАНИЕ</td>
+
+            </tr>
+            <tr>
+                <td>==</td>
+                <td>Оператор "равно".<br>если 45 == 45 то результат будет <strong class="trueText">TRUE</strong> <br>
+                    <button onclick="comFunc()"><strong class="codeText">code play</strong></button> </td>
+
+            </tr>
+
+            <tr>
+                <td>!=</td>
+                <td>Оператор "неравно"<br>
+                     если
+                    45 != 3 то тогда будет значение <strong class="trueText">TRUE</strong>  <br>
+                    <button onclick="notEqualFunc()"><strong class="codeText">code play</strong></button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>===</td>
+                <td>Оператор "строго равно"<br>
+                     если 45 === "45" то тогда будет значение <strong class="falseText">FALSE</strong><br>
+                     этот оператор сравнивает не только значение но и тип <br>
+                    <button onclick="strictlyFunc()"><strong class="codeText">code play</strong></button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>!==</td>
+                <td>Оператор "строго неравно"<br>
+                     если 45 !== "45" то тогда будет значение <strong class="trueText">TRUE</strong><br>
+                     этот оператор сравнивает не только значение но и тип <br>
+                    <button onclick="NostrictlyFunc()"><strong class="codeText">code play</strong></button>
+                </td>
+            </tr>
+
+            <tr>
+                <td> > </td>
+                <td>Оператор "больше"<br>
+                     если 45 > 40 то тогда будет значение <strong class="trueText">TRUE</strong><br>
+
+                    <button onclick="mostFunc()"><strong class="codeText">code play</strong></button>
+                </td>
+            </tr>
+
+            <tr>
+                <td> >= </td>
+                <td>Оператор "больше или равно"<br>
+                     если 45 >= 45 то тогда будет значение <strong class="trueText">TRUE</strong><br>
+
+                    <button onclick="mostAreEqualFunc()"><strong class="codeText">code play</strong></button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                </td>
+                <td>Оператор "меньше"<br>
+                     если 35 меньше 45 то тогда будет значение <strong class="trueText">TRUE</strong><br>
+
+                    <button onclick="lessFunc()"><strong class="codeText">code play</strong></button>
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>
+                </td>
+                <td>Оператор "меньше или равно"<br>
+                     если 45  меньше или равен 45 то тогда будет значение <strong class="trueText">TRUE</strong><br>
+
+                    <button onclick="lessAreEqualFunc()"><strong class="codeText">code play</strong></button>
+                </td>
+            </tr>
+        </table>
+
+
+        <h2>Логические операторы</h2>
+        <p style="border: 5px solid white; width: 500px">логические операторы используют <br> при работе с логическими значениями <strong class="trueText">TRUE</strong>  и <strong class="falseText">FALSE</strong> .
+            <br>Операторов в<strong style="
+        color: peru"> JS</strong> всего три.
+        </p>
+        <table>
+            <tr>
+                <td style="color: yellow; font-size: 20px;">Оператор</td>
+                <td style="color: yellow; font-size: 20px;">Описание</td>
+            </tr>
+
+            <tr>
+                <td><code class="operatorsCol">&&
+                    </code></td>
+                <td>Логическое <strong>И</strong>: <br>Это бинарный оператор,результатом выражения A && B
+                    будет <strong style="color: crimson;"> 
+                        <br> TRUE </strong> если оба операнда равны
+                    <br>
+                    <button onclick="logicOpAnd()"> <strong style="font-size: 17px;">code play</strong></button> здесь все значения равны и вывод <strong class="trueText">TRUE</strong>
+                    <br>
+                    <button onclick="logicOpAndFal()"><strong class="codeText"> code play 2 </strong></button>здесь разные значения и вывод  <strong class="falseText">FALSE</strong>
+                </td>
+            </tr>
+            <tr>
+                <td><strong class="operatorsCol">||</strong></td>
+                <td>Логическое ИЛИ: <br>
+                Это бинарный оператор,результатом  выражения A || B <br>будет <strong class="trueText">TRUE</strong> если если хотябы один операнд равен <strong class="trueText">TRUE</strong>  <br>
+                если оба операнда равны  <strong class="falseText">FALSE</strong>   
+                то результат выражения <br> тоже будет <strong class="falseText">FALSE</strong>
+                <br>
+                <button onclick="logicOpVS()"> <strong class="codeText">play code</strong></button>
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>
