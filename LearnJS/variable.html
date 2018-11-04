@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>variable</title>
+    <script src="variable.js"></script>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+   <div id="sidebar">
+        <div class="toggle-btn" onclick="openNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a  class="colorUL" href="index.html">MENU</a> </li>
+            <li><a  class="colorUL" href="variable.html">знакомства с переменныими</a></li>
+            <li><a  class="colorUL" href="ouput.html">командны вывода</a></li>
+            <li><a  class="colorUL" href="operators.html">операторы</a></li>
+         </ul>
+         
+        <img class="logo" src="img/logo2.png" width=200>
+
+    
+    </div>
+    <hr>
+    <div class="content">
+    <h1>знакомство и работа с переменными</h1>
+    
+        <p>
+            <strong>Переменная-</strong>это именнованная область памяти ,к которой можно обращаться по имени<br>
+            таким образом у переменной есть имя (которое дал разработчик)<br>
+             так же у переменной есть тип<br>
+        </p>
+        <h2>значения которые использует JavaScript</h2>
+        <ul>
+            <li><strong>String</strong> - текстовая строка;</li>
+            <li><strong>number</strong> - числовое значение;</li>
+            <li><strong>boolean</strong> - логическое <strong>(истина или ложь)</strong>;</li>
+            <li><strong>object</strong>- объект;</li>
+            <li><strong>function</strong> - функция;</li>
+        </ul>
+        <hr>
+
+        <h2>сценарий с одной переменной </h2>
+        <code>
+            var a;<br>
+            a = "вывод этого сообщения";<br>
+            alert(a);<br>
+        </code>
+        <button onclick="varFunc()">запуск кода</button>
+
+        <hr>
+
+        <h2>Сценарий с двумя переменными</h2>
+
+        <code>
+            var a,b;<br>
+            a ="мой возраст";<br>
+            b = 25;<br>
+            document.write(a + b);<br>
+        </code>
+        <button onclick="funcCont()">нажми чтобы увидеть результат</button>
+
+        <p>видно что команда <strong>document.write()</strong> вывела и произвела склеивание(конкатенацию) обеих значений из одной и той же переменной</p>
+
+
+
+        <hr>
+        <h2>работа с выражениями</h2>
+        <p>
+            существует функция <strong>eval()</strong> <br>
+            она меняет текстовые типы на математические <br>
+            Пример: <br>
+
+            выражение "3+(5*2+6)/4" это <strong>string</strong> ,хотя очевидно что здесь арифмитическое выражение (<strong>number</strong>)
+        </p>
+        <code>
+
+            var x = "3+(5*2+6)/4"; <br>
+            document.write(x +"="); // эта команда добавит знак равентсва <br>
+            document.write(eval(x));
+        </code>
+        <br>
+        <button onclick="funcEval()">жми чтоб увидеть результат</button>
+    </div>
+</body>
+
+</html>
