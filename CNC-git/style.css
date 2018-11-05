@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+
+* {
+    font-family: 'Play', sans-serif;
+
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+
+    background:url(img/spaceBack.png);
+
+}
+
+
+
+.unitName {
+    text-align: center;
+
+    border-radius: 5px;
+    border: 1px solid black;
+
+    /*прозрачная структура*/
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.6) 22%,
+        rgba(16, 171, 32, 0.6) 25%,
+        rgba(16, 171, 32, 0.6) 95%,
+        rgba(16, 171, 32, 0.6) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.navbar {
+
+
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+    border: 4px solid black;
+    background: url(borderLogo.jpg);
+    width: 700px;
+    height: 178px;
+
+
+    rgba(16,
+    171,
+    32,
+    0.2) 0%,
+    rgba(255,
+    255,
+    255,
+    0.2) 25%,
+    rgba(255,
+    255,
+    255,
+    0.2) 75%,
+    rgba(16,
+    171,
+    32,
+    0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 2),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.navLi {
+
+    margin: inherit;
+    color: aqua;
+    width: 150px;
+    padding-bottom: 3px;
+    background-color: darkslategray;
+    text-align: center;
+
+
+    /*  для ДЗ 
+	display: inline-table;
+	position: relative;
+	right: 40px;
+	*/
+}
+
+li {
+    list-style-image: url(img/CNC1_gdi_Emblem.png);
+
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 25%,
+        rgba(0, 0, 0, 0.2) 75%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+
+header {
+    max-width: 1500px;
+    min-width: 200px;
+}
+
+container {
+    max-width: 1500px;
+    min-width: 500px;
+    min-height: 100%;
+
+}
+
+
+
+header a:hover {
+
+    color: black;
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 2) 0%,
+        rgba(16, 171, 32, 0.2) 25%,
+        rgba(16, 171, 32, 0.2) 75%,
+        rgba(16, 171, 32, 2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+
+}
+
+
+.navButton {
+
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    /*border: 1px solid black;
+	
+	/*прозрачная структура*/
+}
+
+
+h2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: black;
+
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 1) 22%,
+        rgba(16, 171, 32, 0.6) 25%,
+        rgba(16, 171, 32, 0) 95%,
+        rgba(16, 171, 32, 0) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 34px;
+    font-style: italic;
+    line-height: 16px;
+    height: 25px;
+
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(16, 171, 32, 0.6) 25%,
+        rgba(16, 171, 32, 0.6) 95%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+}
+
+p {
+    color: antiquewhite;
+    font-size: 15px;
+    text-align: center;
+    line-height: 16px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+
+
+
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 25%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+
+.shortDescript {
+    float: right;
+    position: relative;
+    text-align: center;
+    right: 495px;
+    bottom: 340px;
+    width: 300px;
+    height: 200px
+}
+
+
+.description {
+    font-size: 16px;
+    color: antiquewhite;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+    width: 300px;
+    height: 300px;
+}
+
+
+
+table {
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    color: aliceblue;
+
+    float: left;
+    position: relative;
+    left: 350px;
+    bottom: 320px;
+
+
+
+
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 25%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+td {
+
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 25%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+}
+
+
+.link {
+
+
+    color: antiquewhite;
+    border: 5px solid black;
+    position: inherit;
+    background-size: cover;
+    background-position: center;
+    width: 700px;
+    height: 178px;
+
+
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 25%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+}
+
+
+.addres {
+
+    color: ivory;
+    background: url(wrath.jpg);
+    background-position: left;
+    width: 700px;
+    height: 178px;
+
+
+    (90deg,
+    rgba(16,
+    171,
+    32,
+    0.2) 0%,
+    rgba(255,
+    255,
+    255,
+    0.2) 25%,
+    rgba(255,
+    255,
+    255,
+    0.2) 75%,
+    rgba(16,
+    171,
+    32,
+    0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+}
+
+
+
+.techMenu li {
+    display: inline-table;
+    margin: 7px;
+    transition: 1s ease;
+}
+
+
+.techUnitGDI {
+    border-radius: 15px;
+    border: 4px solid black;
+    width: 101px;
+    transition: 1s ease;
+}
+
+.techUnitNOD {
+    border-radius: 15px;
+    border: 4px solid black;
+    width: 101px;
+}
+
+.techUnitNOD:hover {
+    background: url(Nod_Logo.png);
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+
+.techUnitGDI:hover {
+    background: url(GDI_Logo.png);
+    background-position: center;
+    background-size: cover;
+    transition: 1s ease;
+}
+
+
+
+
+
+
+input {
+
+
+    color: firebrick;
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 25%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+textarea {
+
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 25%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+
+
+.introGDI {
+
+
+    position: relative;
+    float: left;
+
+
+    rgba(16,
+    171,
+    32,
+    9) 120%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+    
+}
+
+.imageComand {
+
+    background: url(img/wewe.png);
+    background-size: cover;
+    width: 440px;
+    height: 280px;
+    float: left;
+
+
+    rgba(16,
+    171,
+    32,
+    9) 120%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+
+.animated {
+
+
+    background: url(img/animated-logo.gif);
+    background-size: cover;
+    width: 300px;
+    height: 180px;
+    float: left;
+    position: relative;
+    bottom: 190px;
+    left: 1px;
+
+
+    rgba(16,
+    171,
+    32,
+    9) 120%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+
+.radar {
+    background: url(img/Accen.gif);
+
+    float: left;
+    width: 120px;
+    height: 110px;
+    background-size: contain;
+    position: relative;
+    left: 10px;
+    bottom: 190px;
+
+    rgba(16,
+    171,
+    32,
+    9) 120%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+}
+
+.effect {
+    background: url(img/load.gif);
+    background-size: cover;
+    width: 120px;
+    height: 60px;
+    float: left;
+    position: relative;
+    right: 110px;
+    bottom: 70px;
+
+
+    rgba(16,
+    171,
+    32,
+    9) 120%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+footer {
+    float: left;
+
+    width: 100%;
+    max-width: 1500px;
+    min-width: 200px;
+
+
+
+}
+
+
+
+
+hr {
+    float: left;
+
+    width: 100%;
+    height: 2px;
+    rgba(16,
+    171,
+    32,
+    9) 120%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+
+}
+
+.bord {
+    border: rgba(16,
+        171,
+        32,
+        9) 120%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+
+button {
+    font-size: 13px;
+    width: 70px;
+    height: 30px;
+    float: right;
+    position: relative;
+    bottom: 300px;
+    right: 100px;
+    border: 2px solid black;
+    color: antiquewhite;
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 25%,
+        rgba(255, 255, 255, 0.2) 75%,
+        rgba(16, 171, 32, 0.2) 100%);
+    box-shadow: 0 0 24px rgba(16, 171, 32, 6),
+        inset 0 0 1px rgba(16, 171, 32, 5);
+
+}
+
+
+button:hover {
+    background: url(img/text.gif);
+    background-size: cover;
+    border: 2px solid black;
+    rgba(16,
+    171,
+    32,
+    0.2) 0%,
+    rgba(255,
+    255,
+    255,
+    0.2) 25%,
+    rgba(255,
+    255,
+    255,
+    0.2) 75%,
+    rgba(16,
+    171,
+    32,
+    0.2) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
+    transition: 1s ease;
+}
+
+.mainMenu {
+    background: url(img/mainMenu.png);
+    width: 1406px;
+    height: 1000px;
+    background-size: cover;
+
+    box-shadow: 0 0 24px rgba(16, 171, 32, 0.6),
+        inset 0 0 1px rgba(16, 171, 32, 5);
+}
+
+.GDImain {
+    display: block;
+    width: 195px;
+    height: 206px;
+    background: url(img/GDIbuttonOfline.png);
+    float: left;
+    margin-top: 650px;
+    margin-left: 250px
+}
+
+.GDImain:hover {
+    background: url(img/gdiButton.png);
+    display: block;
+    width: 195px;
+    height: 206px;
+
+    box-shadow: 0 0 24px rgba(8, 102, 195, 6),
+        inset 0 0 1px rgba(16, 171, 32, 5);
+    transition: 1s ease;
+}
+
+
+.NODmain {
+    display: block;
+    width: 195px;
+    height: 206px;
+    background: url(img/NODbuttonOfline.png);
+    float: right;
+    margin-top: 650px;
+    margin-right: 260px
+}
+
+.NODmain:hover {
+    background: url(img/nodButton.png);
+    display: block;
+    width: 195px;
+    height: 206px;
+    box-shadow: 0 0 24px rgba(241, 18, 18, 6),
+        inset 0 0 1px rgba(16, 171, 32, 5);
+    transition: 1s ease;
+}
+
+.alert {
+    background: url(img/red-alert.gif);
+    width: 200px;
+    height: 150px;
+    background-size: contain;
+    float: left;
+    margin-left: 150px;
+    margin-top: 650px;
+}
