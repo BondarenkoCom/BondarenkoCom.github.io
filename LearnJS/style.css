@@ -14,6 +14,7 @@
 body {
     background-color: #131a22;
     color:papayawhip;
+    margin:20px;
 }
 
 /* здесь настройки меню выезжающего меню */
@@ -64,24 +65,28 @@ body {
 
 #sidebar ul li a:hover {
     color: rgba(37, 186, 47, 1);
-    border-bottom: 1px solid rgba(37, 186, 47, 1);
+   
 
 
 }
 
 #sidebar .toggle-btn {
     position: absolute;
-    left: 280px;
+    width: 100px;
+    height: 30px;
+    left: 268px;
     top: 20px;
-    background: blue;
+    background: url(theme/But2.png);
+    background-size: cover;
     padding: 10px;
     border-radius: 12px;
     cursor: pointer;
+    transition: 0.9s;
 }
 
 #sidebar .toggle-btn:hover {
-    background: rgba(37, 186, 47, 1);
-    
+     background: url(theme/But1.png);
+    background-size: cover;
 }
 
 #sidebar .toggle-btn:hover span {
@@ -105,7 +110,7 @@ body {
 
 
 .content {
-    
+    text-align: center;
     margin-top: 70px;
 }
 
@@ -120,9 +125,12 @@ body {
 .operater {
     padding-left: 20px;
 }
-
+.operater li {
+    list-style: none;
+}
 
 table {
+    
     border: 5px solid blue;
     padding: 3px;
 }
@@ -133,9 +141,18 @@ tr {
 
 }
 
+td:nth-of-type(1) {
+    background: url(theme/texture1.jpg);
+    background-position:bottom;
+    background-size: cover;
+    
+}
+
+
 td {
     border: 3px solid blue;
     padding: 3px;
+    
 }
 
 /* header site */
@@ -173,9 +190,32 @@ td {
 }
 
 .operatorsCol {
-    color:lightseagreen;
+    color:white;
+    font-size: 50px;
+    
 }
 
 .codeText {
     font-size: 17px;
 }
+
+.tableLogic {
+    margin-left: 30%;
+    text-align: center;
+}
+
+.tableOfTrue {
+width: 610px;
+}
+
+
+
+.tableOfTrue td:nth-of-type(1) {
+    background: url(theme/cntHead.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+

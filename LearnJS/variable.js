@@ -209,5 +209,9 @@ function logicOpVS() {
 };
 
 
-
+function funcNOT() {
+    var a;
+    a = true;
+    alert(!a + " когда выражение !TRUE");
+};
 
