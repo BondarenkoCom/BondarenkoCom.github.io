@@ -13,9 +13,7 @@
 
     <div id="sidebar">
         <div class="toggle-btn" onclick="openNav()">
-            <span></span>
-            <span></span>
-            <span></span>
+            
         </div>
         <ul>
             <li>MENU</li>
@@ -174,11 +172,11 @@
 
 
         <h2>Логические операторы</h2>
-        <p style="border: 5px solid white; width: 500px">логические операторы используют <br> при работе с логическими значениями <strong class="trueText">TRUE</strong>  и <strong class="falseText">FALSE</strong> .
+        <p class="tableLogic" style="border: 5px solid white; width: 500px">логические операторы используют <br> при работе с логическими значениями <strong class="trueText">TRUE</strong>  и <strong class="falseText">FALSE</strong> .
             <br>Операторов в<strong style="
         color: peru"> JS</strong> всего три.
         </p>
-        <table>
+        <table class="logicOperators">
             <tr>
                 <td style="color: yellow; font-size: 20px;">Оператор</td>
                 <td style="color: yellow; font-size: 20px;">Описание</td>
@@ -199,15 +197,70 @@
             <tr>
                 <td><strong class="operatorsCol">||</strong></td>
                 <td>Логическое ИЛИ: <br>
-                Это бинарный оператор,результатом  выражения A || B <br>будет <strong class="trueText">TRUE</strong> если если хотябы один операнд равен <strong class="trueText">TRUE</strong>  <br>
-                если оба операнда равны  <strong class="falseText">FALSE</strong>   
-                то результат выражения <br> тоже будет <strong class="falseText">FALSE</strong>
-                <br>
-                <button onclick="logicOpVS()"> <strong class="codeText">play code</strong></button>
+                    Это бинарный оператор,результатом выражения A || B <br>будет <strong class="trueText">TRUE</strong> если если хотябы один операнд равен <strong class="trueText">TRUE</strong> <br>
+                    если оба операнда равны <strong class="falseText">FALSE</strong>  
+                    то результат выражения <br> тоже будет <strong class="falseText">FALSE</strong>
+                    <br>
+                    <button onclick="logicOpVS()"> <strong class="codeText">play code</strong></button>
                 </td>
             </tr>
-
+            <tr>
+                <td><strong class="operatorsCol">!</strong></td>
+                <td>Оператор логического отрицания: <br>
+                    это унарный оператор. <br>
+                    Если значение операнда <strong class="trueText">TRUE</strong> ,то результата выражения <br>
+                    <strong class="trueText">!TRUE</strong> будет <strong class="falseText">FALSE</strong> .
+                    <br>
+                    <button onclick="funcNOT()"><strong class="codeText">play code</strong></button>  
+                </td>
+            </tr>
         </table>
+        <div>
+            <h2>Таблица истинности для логического И(&&)
+            </h2>
+
+            <table class="tableOfTrue">
+                <tr>
+                    <td>A B</td>
+                    <td><strong class="trueText">TRUE</strong> </td>
+                    <td><strong class="falseText">FALSE</strong></td>
+                </tr>
+                <tr>
+                    <td><strong class="trueText">TRUE</strong></td>
+                    <td><strong class="trueText">TRUE</strong></td>
+                    <td><strong class="falseText">FALSE</strong></td>
+                </tr>
+                <tr>
+                    <td><strong class="falseText">FALSE</strong></td>
+                    <td><strong class="falseText">FALSE</strong></td>
+                    <td><strong class="falseText">FALSE</strong></td>
+                </tr>
+            </table>
+        </div>
+        
+         <div>
+            <h2>Таблица истинности для логического ИЛИ(||)</h2>
+
+            <table class="tableOfTrue">
+                <tr>
+                    <td>A B</td>
+                    <td><strong class="trueText">TRUE</strong> </td>
+                    <td><strong class="falseText">FALSE</strong></td>
+                </tr>
+                <tr>
+                    <td><strong class="trueText">TRUE</strong></td>
+                    <td><strong class="trueText">TRUE</strong></td>
+                    <td><strong class="trueText">TRUE</strong></td>
+                </tr>
+                <tr>
+                    <td><strong class="falseText">FALSE</strong></td>
+                    <td><strong class="trueText">TRUE</strong></td>
+                    <td><strong class="falseText">FALSE</strong></td>
+                </tr>
+            </table>
+        </div>
+
+
 
     </div>
 
