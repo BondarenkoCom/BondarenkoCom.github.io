@@ -3,3 +3,8 @@ function openNav() {
     }
     
     
+function openNavCSS() {
+        document.getElementById("sidebarCSS").classList.toggle('active');
+    }
+    
+    
