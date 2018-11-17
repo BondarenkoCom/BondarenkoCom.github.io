@@ -7,14 +7,14 @@
     padding: 0;
     margin: 1;
     font-family: 'Play', sans-serif;
-    
-    
+
+
 }
 
 body {
     background-color: #131a22;
-    color:papayawhip;
-    margin:20px;
+    color: papayawhip;
+    margin: 20px;
 }
 
 /* здесь настройки меню выезжающего меню */
@@ -24,7 +24,7 @@ body {
     position: fixed;
     width: 278px;
     height: 670px;
-    
+
 
     border-radius: 46px;
     left: -276px;
@@ -32,10 +32,10 @@ body {
     -moz-transition: all 1300ms;
     -webkit-transition: all 1300ms;
     transition: all 1300ms;
-    
+
     background: url(theme/menuNav.png);
     background-size: cover;
-    
+
 }
 
 #sidebar.active {
@@ -52,7 +52,7 @@ body {
 
 #sidebar ul li:not(:first-child) {
     width: 75%;
-    margin-left:25%;
+    margin-left: 25%;
     list-style: none;
     padding: 15px 10px;
 
@@ -65,7 +65,7 @@ body {
 
 #sidebar ul li a:hover {
     color: rgba(37, 186, 47, 1);
-   
+
 
 
 }
@@ -85,8 +85,11 @@ body {
 }
 
 #sidebar .toggle-btn:hover {
-     background: url(theme/But1.png);
+    background: url(theme/But1.png);
     background-size: cover;
+     /* переворот кнопки */
+    transform: rotate(360deg);
+    transition: 2s;
 }
 
 #sidebar .toggle-btn:hover span {
@@ -115,22 +118,133 @@ body {
 }
 
 .logo {
-    margin-top: 56%;
+    margin-top: 40%;
     margin-left: 20%;
 
 }
+
+/* sidebar CSS */
+
+
+#sidebarCSS {
+    z-index: 1;
+    position: fixed;
+    width: 278px;
+    height: 670px;
+
+
+    border-radius: 46px;
+    right:-278px;
+
+    -moz-transition: all 1300ms;
+    -webkit-transition: all 1300ms;
+    transition: all 1300ms;
+    
+
+
+
+    background: url(theme/menuNavCSS.png) ;
+    background-size: cover;
+}
+
+
+#sidebarCSS.active {
+    right: 1px;
+
+}
+
+#sidebarCSS ul li:first-child {
+    text-align: center;
+    font-size: 1.95em;
+    list-style: none;
+    padding: 25px 10px 10px 10px;
+    color: rgba(37, 186, 47, 1);
+    
+     
+}
+
+#sidebarCSS ul li:not(:first-child) {
+    width: 75%;
+    margin-left: 25%;
+    list-style: none;
+    padding: 15px 10px;
+   
+}
+
+#sidebarCSS ul li a {
+    text-decoration: none;
+
+}
+
+#sidebarCSS ul li a:hover {
+    color: rgba(37, 186, 47, 1);
+
+
+
+}
+
+#sidebarCSS .toggle-btn {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    right: 268px;
+    top: 20px;
+    background: url(theme/But2.png);
+    background-size: cover;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.9s;
+    
+}
+
+#sidebarCSS .toggle-btn:hover {
+    background: url(theme/But1.png);
+    background-size: cover;
+    /* переворот кнопки */
+    transform: rotate(360deg);
+    transition: 2s;
+}
+
+#sidebarCSS .toggle-btn:hover span {
+    background: white;
+}
+
+
+#sidebarCSS .toggle-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+
+.content {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.logoCSS {
+    margin-top: 85%;
+    margin-left: 11%;
+
+}
+
+
 
 /*operators.html*/
 
 .operater {
     padding-left: 20px;
 }
+
 .operater li {
     list-style: none;
 }
 
 table {
-    
+
     border: 5px solid blue;
     padding: 3px;
 }
@@ -143,23 +257,23 @@ tr {
 
 td:nth-of-type(1) {
     background: url(theme/texture1.jpg);
-    background-position:bottom;
+    background-position: bottom;
     background-size: cover;
-    
+
 }
 
 
 td {
     border: 3px solid blue;
     padding: 3px;
-    
+
 }
 
 /* header site */
 #header {
-    width: 980px;
+    width: 930px;
     height: 190px;
-    margin-left: 260px;
+    margin-left: 230px;
     color: floralwhite;
     display: block;
     background: url(theme/banner.jpg);
@@ -186,18 +300,25 @@ td {
 }
 
 .trueText {
-    color: chartreuse;;
+    color: chartreuse;
+    ;
 }
 
 .operatorsCol {
-    color:white;
+    color: white;
     font-size: 50px;
-    
+
 }
 
 .codeText {
-    font-size: 17px;
+
+    font-size: 19px;
+    background-color: firebrick;
+
+
 }
+
+
 
 .tableLogic {
     margin-left: 30%;
@@ -205,7 +326,7 @@ td {
 }
 
 .tableOfTrue {
-width: 610px;
+    width: 610px;
 }
 
 
@@ -217,5 +338,14 @@ width: 610px;
 }
 
 
+.biteMath {
+    border: 3px solid black;
+    width: 10%;
+    background: url(theme/cntFooter.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
-
+.exampleCode {
+    margin: 10px;
+}

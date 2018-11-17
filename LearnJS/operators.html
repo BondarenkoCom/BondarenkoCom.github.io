@@ -13,7 +13,7 @@
 
     <div id="sidebar">
         <div class="toggle-btn" onclick="openNav()">
-            
+
         </div>
         <ul>
             <li>MENU</li>
@@ -21,9 +21,24 @@
             <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
             <li><a class="colorUL" href="operators.html">операторы</a></li>
 
-
+              <li><a class="colorUL" href="example.html">примеры</a></li>
+            
         </ul>
         <img class="logo" src="img/logo2.png" width=200>
+    </div>
+    
+    
+      <div id="sidebarCSS">
+        <div class="toggle-btn" onclick="openNavCSS()">
+
+        </div>
+       <ul>
+            <li>CSS</li>
+            <li><a class="colorUL" href="#">основы</a></li>
+            <li><a class="colorUL" href="CSS/animation.html">Анимация</a></li>
+            </ul>
+
+       <img class="logoCSS" src="img/logo2.png" width=200>
     </div>
     <hr>
     <div class="content">
@@ -237,8 +252,8 @@
                 </tr>
             </table>
         </div>
-        
-         <div>
+
+        <div>
             <h2>Таблица истинности для логического ИЛИ(||)</h2>
 
             <table class="tableOfTrue">
@@ -259,8 +274,143 @@
                 </tr>
             </table>
         </div>
+        <div>
+            <h2>Побитовые операторы</h2>
 
+            <p>Имеется группа операций,которые выполняются с целыми числами на уровне их битового представления. <br>
+                Такие операции называются <strong style="color: deeppink">побитовыми</strong> или <strong style="color: deeppink">поразрядными</strong>, как и их операторы. <br>
+                Для работы с такими операциями нужно иметь некоторое представление о двоичной системе счисления и способах битового представления чисел в компьютере.
+            </p>
 
+            <h2>Детали</h2>
+
+            <p>В двоичной системе счисления числа записываются с помощью всего двух цифр - нулей и единиц. <br>
+                Например, двоичный код <code style="color: darkgreen">101 </code> в десятичной равен 5 , а код <code style="color: darkgreen">10101</code> это 21 в десятичной.</p>
+
+            <p>
+                основная сфера применения масок – это быстрые вычисления, экономия памяти, низкоуровневые операции, связанные с рисованием из JavaScript (3d-графика), интеграция с некоторыми функциями ОС (для серверного JavaScript), и другие ситуации, когда уже существуют функции, требующие битовую маску.
+            </p>
+
+            <h2>Правила бинарного сложения чисел</h2>
+
+            <p class="biteMath">
+                0 + 0 = 0 <br>
+                0 + 1 = 1 <br>
+                1 + 0 = 0 <br>
+                1 + 1 = 10
+            </p>
+
+            <h2>Побитовые операторы </h2>
+            <table>
+                <tr>
+                    <td style="color: yellow; font-size: 20px;">Оператор</td>
+                    <td style="color: yellow; font-size: 20px;">Описание</td>
+                </tr>
+                <tr>
+                    <td> <strong class="operatorsCol">&
+                        </strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong class="operatorsCol">|</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong class="operatorsCol">^</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong class="operatorsCol">-</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong class="operatorsCol"> </strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong class="operatorsCol">^</strong></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><strong class="operatorsCol">^</strong></td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h2>Сокращенные формы оператора присваивания</h2>
+            <p>
+                В  <strong style="color: orangered"> JavaScript </strong> есть специальные формы сокращения операторов присваивания.
+                <br>
+                Допустим,необходимо выполнить команду вида A = A + B ,
+                <br> тогда эту же команду можно записать в более компактном виде , A+=b
+            </p>
+            <table>
+                <tr>
+                    <td style="color: yellow; font-size: 20px;">Оператор</td>
+                    <td style="color: yellow; font-size: 20px;">Пример использования</td>
+                    <td style="color: yellow; font-size: 20px;">Эквивалентная команда</td>
+                </tr>
+                <tr>
+                    <td>+=</td>
+                    <td>A+=B</td>
+                    <td>A=A+B</td>
+                </tr>
+                <tr>
+                    <td>-=</td>
+                    <td>A-=B</td>
+                    <td>A=A-B</td>
+                </tr>
+                <tr>
+                    <td>*=</td>
+                    <td>A*=B</td>
+                    <td>A=A*B</td>
+                </tr>
+                <tr>
+                    <td>/=</td>
+                    <td>A/=B</td>
+                    <td>A=A/B</td>
+                </tr>
+                <tr>
+                    <td>%=</td>
+                    <td>A%=B</td>
+                    <td>A=A%B</td>
+                </tr>
+                <tr>
+                    <td>&=
+                    </td>
+                    <td>A&=B
+                    </td>
+                    <td>A=A&B 
+                    </td>
+                </tr>
+                <tr>
+                    <td>|=</td>
+                    <td>A|=B</td>
+                    <td>A=A|B</td>
+                </tr>
+                <tr>
+                    <td>^=</td>
+                    <td>A^=B</td>
+                    <td>A=A^B</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+<h2>Тернарный оператор</h2>
 
     </div>
 

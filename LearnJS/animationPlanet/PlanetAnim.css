@@ -1,0 +1,30 @@
+
+#spaceAnimation {
+    margin-top: 40px;
+}
+
+
+.mars {
+    width: 500px;
+    padding: 120px;
+    outline: 1px solid red;
+}
+
+.shipLow {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    -webkit-animation: linear 7s orbita;
+}
+
+@-webkit-keyframes orbita {
+    0%{ }
+    25%{left: 600px; transform: rotateY(80deg); }
+    50%{left:330px;}
+    75%{top: 700px; transform: rotateY(180deg) ;}
+    100%{left: 10px; }
+    
+    
+    
+    
+}
