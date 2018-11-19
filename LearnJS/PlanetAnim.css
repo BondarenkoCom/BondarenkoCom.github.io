@@ -92,5 +92,6 @@ input:checked + .two {
     
     position: relative;
     bottom: 800px;
-    right: 300px;
+    right: -4%;
+    
 }
