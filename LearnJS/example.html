@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Example Script</title>
+    <title>while,if/else</title>
 
     <script src="script.js"></script>
     <link href="style.css" rel="stylesheet">
@@ -11,6 +11,7 @@
 <body>
     <div id="header">
         <h1>Примеры кода на <strong style="color: orangered">JavaScript</strong></h1>
+        <h1>циклы принятие решений с помощью IF/ELSE</h1>
         <div id="sidebar">
             <div class="toggle-btn" onclick="openNav()">
             </div>
@@ -25,69 +26,159 @@
             </ul>
             <img class="logo" src="img/logo2.png" width=200>
         </div>
-        
-         <div id="sidebarCSS">
-        <div class="toggle-btn" onclick="openNavCSS()">
 
-        </div>
-       <ul>
-            <li>CSS</li>
-            <li><a class="colorUL" href="#">основы</a></li>
-           <li><a class="colorUL" href="animation.html">Анимация</a></li>
+        <div id="sidebarCSS">
+            <div class="toggle-btn" onclick="openNavCSS()">
+
+            </div>
+            <ul>
+                <li>CSS</li>
+                <li><a class="colorUL" href="#">основы</a></li>
+                <li><a class="colorUL" href="animation.html">Анимация</a></li>
             </ul>
 
-       <img class="logoCSS" src="img/logo.png" width=194>
-    </div>
+            <img class="logoCSS" src="img/logo.png" width=194>
+        </div>
     </div>
 
     <div id="content">
-        <h2>высчет скидки</h2>
-        <p style="color: firebrick; font-size: 24px;">вводите любую сумму от 0 до 25</p>
+        <div class="scriptsExam">
+            <h2>высчет скидки</h2>
+            <p style="color: firebrick; font-size: 24px;">вводите любую сумму от 0 до 1000</p>
 
 
-        <img src="resourse/Skype.jpeg">
-        <br>
-        <button type="button" onclick="FuncSale()"> <strong class="codeText">code
-                play</strong></button>
-        <p id="demo" style="font-size: 30px; color: chartreuse;">здесь будет вывод кода :)</p>
+            <img src="resourse/Skype.jpeg">
+            <br>
+            <button type="button" onclick="FuncSale()"> <strong class="codeText">code
+                    play</strong></button>
+            <p id="demo" style="font-size: 30px; color: chartreuse;">здесь будет вывод кода :)</p>
 
-        <script>
-            //создать функцию 
-            function FuncSale() {
-                //содзание переменных
-                var price = prompt('Ведите цену!');
-                var discount = 10;
-                var total = price - (price * (discount / 100));
-                //условие ЕСЛИ переменная  TOTAL будет больше 25 тогда выйдет сообщение в  ID DEMO с текстом скидка ,в ином случае что не хватает
-                if (total > 25) {
-                    document.getElementById('demo').innerHTML = "Вам скидка " + total + " $ ";
-                } else {
-                    document.getElementById('demo').innerHTML = "вам не хватило до получения скидки";
+            <script>
+                //создать функцию 
+                function FuncSale() {
+                    //содзание переменных
+                    var price = prompt('Ведите цену!');
+                    var discount = 10;
+                    var total = price - (price * (discount / 100));
+                    //условие ЕСЛИ переменная  TOTAL будет больше 25 тогда выйдет сообщение в  ID DEMO с текстом скидка ,в ином случае что не хватает
+                    if (total > 25) {
+                        document.getElementById('demo').innerHTML = "Вам скидка " + total + " $ ";
+                    } else {
+                        document.getElementById('demo').innerHTML = "вам не хватило до получения скидки";
+                    };
                 };
-            };
-        </script>
+            </script>
+        </div>
 
-        <h2>Пример цикла и спрайта</h2>
-        <button onclick="FuncWhile()"><strong class="codeText">code
-                play</strong></button>
-                  
-                <div id="scoop"></div>
-                <div id="scoopB"></div>
-        <br>
-        <script>
-            function FuncWhile() {
-                var scoops = 5;
-                while (scoops > 0) {
-                    //document.write('hell <br> ');
-                    document.getElementById('scoop').innerHTML = ' Another scoops! <br> ';
+        <div class="scriptsExam">
+            <h2>Пример цикла</h2>
+            <button onclick="FuncWhile()"><strong class="codeText">code play</strong></button>
 
-                    scoops = scoops-1;
+            <div id="scoop"></div>
+            <div id="scoopB"></div>
+            <br>
+            <script>
+                function FuncWhile() {
+                    var scoops = prompt('введите значение')
+                    //var scoops = 5;
+                    while (scoops > 0) {
+                        //console.log('hell <br> ');
+                        document.getElementById('scoop').innerHTML = ' Another scoops! <br> ';
+                        scoops = scoops - 1;
+                    }
+                    //console.log("fin");
+                    document.getElementById('scoopB').innerHTML = " life without ";
                 }
-                //document.write("fin");
-                document.getElementById('scoopB').innerHTML = " life without ";
-            }
-        </script>
+            </script>
+        </div>
 
+        <div class="scriptsExam">
+            <h2> Принятие решений через  <strong style="color: firebrick; font-size:26px;">IF/ELSE </strong></h2>
+
+            <button onclick="FuncIfElse()"><strong class="codeText">code play</strong></button>
+
+            <p id="IF" style="font-size: 30px; color: chartreuse;">тут будет код :3</p>
+            <p id="ELSE" style="font-size: 30px; color: darkred;"></p>
+
+            <img src="resourse/if:else.jpeg" alt="">
+            <script>
+                function FuncIfElse() {
+                    var a = prompt(" введи сумму ");
+
+                    if (a >= 15) {
+                        document.getElementById('IF').innerHTML = "  тебе хватает";
+                    } else {
+                        document.getElementById('ELSE').innerHTML = " тебе срочно нужно в банк!!!";
+                    }
+                }
+            </script>
+        </div>
+
+        <div class="scriptsExam">
+            <h2>вариант конструкции <strong style="color: firebrick; font-size:26px;">ELSE IF </strong> </h2>
+
+            <button onclick="FundConstIf()"><strong class="codeText">code play</strong> </button>
+
+            <p id="constIFelse" style="color: crimson; font-size: 24px">  тут будет код </p>
+            <img src="resourse/constIFelse.jpeg">
+
+            <script>
+                function FundConstIf() {
+
+                    var scoops = prompt("вводите числа от 1 до 5");
+
+
+                    if (scoops >= 5) {
+                        document.getElementById('constIFelse').innerHTML = " введено число 5 или больше  ";
+                    } else if (scoops == 4) {
+                        document.getElementById('constIFelse').innerHTML = " введено число 4 ";
+                    } else if (scoops == 3) {
+                        document.getElementById('constIFelse').innerHTML = " введено число 3 ";
+                    } else if (scoops == 2) {
+                        document.getElementById('constIFelse').innerHTML = " введено число 2";
+                    } else if (scoops == 1) {
+                        document.getElementById('constIFelse').innerHTML = " введено число 1";
+                    } else if (scoops == 0) {
+                        document.getElementById('constIFelse').innerHTML = " введено чилсо 0!";
+                    } else {
+                        document.getElementById('constIFelse').innerHTML = " ничего не введено";
+                    }
+                }
+            </script>
+        </div>
+<!-- решить проблему с выводом в нужное окно -->
+        <div class="scriptsExam">
+            <h2>пример while</h2>
+            <p id="whileHappy"></p>
+
+            <button onclick="FuncWhile()"><strong class="codeText">code play</strong></button>
+
+            <script>
+                function FuncWhile() {
+                    var i = 0;
+                    var name = "Artem";
+                    while (i < 3) {
+                        //document.getElementById('whileHappy').innerHTML = " Happy Birhtday! <br>"
+                        addElement()
+                        i = i + 1;
+
+                    }
+                    document.getElementById('whileHappy').innerHTML = " Happy birthday dear  " + name + " , <br> "
+                }
+
+                function addElement() {
+
+                    // создаем новый элемент p
+                    // и добавляем в него немного контента
+                    var newP = document.createElement("p");
+                    newP.innerHTML = " Happy Birhtday! <br>";
+                    // добавляем только что созданый элемент в дерево DOM
+                      my_p = document.getElementById("org_p");
+                      document.body.insertBefore(newP, my_p);
+
+                }
+            </script>
+        </div>
 
     </div>
 </body>

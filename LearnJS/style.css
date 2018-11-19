@@ -349,3 +349,17 @@ td {
 .exampleCode {
     margin: 10px;
 }
+
+/* while , if/else  */
+
+.scriptsExam {
+    border: 2px solid blue;
+    margin: 13px;
+    padding: 7px;
+    
+    width: 870px;
+    text-align: center;
+    margin-left: 250px;
+    background: url(theme/bdyfill.jpg);
+    background-size: contain;
+}
