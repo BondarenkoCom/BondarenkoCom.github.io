@@ -89,7 +89,7 @@ input:checked + .two {
 
 .codeAnimGirl {
     float: right;
-    
+    border: 1px solid green;
     position: relative;
     bottom: 800px;
     right: -4%;
