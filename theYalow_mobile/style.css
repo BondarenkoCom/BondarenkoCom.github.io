@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+
+body {
+    margin: auto;
+}
+
+#header {
+    width: 648px;
+    height: 62px;
+    background-color: #f5c506;
+
+
+}
+
+.mainLink {
+    text-align: center;
+    width: 186px;
+    height: 62px;
+    background-color: rgb(143, 142, 142);
+
+}
+
+.mainLink a {
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+
+    font-family: LucidaSans;
+    color: white;
+    font-size: 19.29px;
+    font-style: italic;
+    transform: scaleX(1.0151);
+
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.42);
+
+
+
+
+}
+
+.logo {
+    float: left;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.navMenu {
+    float: right;
+    position: relative;
+    bottom: 43px;
+}
+
+.navMenu a {
+    text-decoration: none;
+    position: relative;
+    bottom: 5px;
+    padding: 12px;
+
+
+
+    font-family: SegoeWP;
+    color: #9b7d08;
+    font-size: 19.05px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.navMenu a:hover {
+    color: firebrick;
+}
+
+.video1 {
+    position: absolute;
+}
+
+/* content */
+
+#content {
+    margin-top: 327px;
+    position: absolute;
+    width: 648px;
+    height: 1124px;
+    background-color: #f5f4f2;
+
+}
+
+.settings {
+
+
+
+    height: 174px;
+    background: url(image/backGround.png);
+}
+
+.imgSet {
+    display: inline-block;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.imgSet a {
+    position: relative;
+    left: 60px;
+    padding-right: 99px;
+    display: inline-block;
+    text-decoration: none;
+
+
+    font-family: 'Black Han Sans', sans-serif;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 0.231px;
+}
+
+.imgSet a:hover {
+    color: yellow;
+    transition: 0.5s;
+    font-weight: 300;
+
+}
+
+
+.windowText {
+    margin-top: 11px;
+    text-align: center;
+    width: 299px;
+    height: 232px;
+    background-color: #f5c506;
+
+    font-family: SegoeWP;
+    color: #8f8e8e;
+    font-size: 20.97px;
+
+    padding: 5px;
+    display: inline-block;
+}
+
+.videoSecond {
+    margin-left: 14px;
+    display: inline-block;
+    position: relative;
+    top: 26px;
+    width: 319px;
+    height: 240px;
+    background-color: violet;
+}
+
+.twitterBlock {
+    width: 647px;
+    height: 233px;
+    background-color: rgb(245, 197, 6);
+
+    display: block;
+    position: absolute;
+    margin-top: 779px;
+}
+
+.LogoTwit {
+    margin-left: 85px;
+    margin-top: 59px;
+}
+
+
+.comentsTwit {
+    float: right;
+    position: relative;
+    top: 24px;
+    margin: auto;
+    width: 320px;
+    height: 60px;
+
+
+    font-family: Arial;
+    color: #8f8e8e;
+    font-size: 13.05px;
+    font-weight: 400;
+    letter-spacing: 0.131px;
+
+
+
+}
+
+.comentsTwit p {
+    background: url(image/Rounded_2.png);
+    background-size: cover;
+    background-position: left;
+
+
+    text-align: center;
+}
+
+.tweet form {
+    float: right;
+    position: relative;
+    bottom: 29px;
+
+}
+
+.tweet input:first-child {
+    border-radius: 10px;
+    border-style: solid;
+    width: 270px;
+    height: 29px;
+
+}
+
+.tweet input:last-child {
+    width: 69px;
+    height: 19px;
+    background-color: yellow;
+}
+
+
+.butTweet {
+    box-sizing: content-box;
+    font-family: 'Black Han Sans', sans-serif;
+    color: grey;
+    font-size: 15.05px;
+    letter-spacing: 0.151px;
+    text-align: center;
+}
+
+/*footer*/
+
+#footer {
+    width: 647px;
+    height: 487px;
+
+    background: url(image/FooterBack.png);
+
+    display: block;
+    position: absolute;
+    margin-top: 72%;
+
+}
+
+#footer h1 {
+    font-family: 'Black Han Sans', sans-serif;
+    color: #f5c506;
+    font-size: 30px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: center;
+}
+
+#footer img {
+    margin-top: 87px;
+    margin-left: 40px;
+}
+
+#circle {
+    border-radius: 50%;
+    background-color: #f5c506;
+    width: 116px;
+    height: 116px;
+
+    position: absolute;
+    margin-top: 30px;
+
+
+}
+
+.textC {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    color: white;
+}
+
+#footer hr {
+    border: 2px solid black;
+}
+
+#footer h4 {
+    text-align: center;
+    font-family: LucidaSans;
+    color: white;
+    font-size: 15px;   
+    text-align: center;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.42);
+}
