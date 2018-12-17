@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-image: linear-gradient(15deg, #f6ffce, #dcf4ff)
+}
+
+/* header */
+
+.logo {
+    position: absolute;
+    left:100px;
+    top: 13px;
+}
+
+.subNav {
+    position: relative;
+    float: right;
+    top:23px;
+    right: 100px;
+    
+    font-size: 32px;
+    font-family: 'Amatic SC', cursive;
+    
+  
+    margin-left:  15px;
+    
+}
+
+.subNav a  {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    
+}
+
+.subNav a:hover {
+    color: aqua;
+    transition: 0.4s;
+}
+
+/* animation home */
+
+.textHeader {
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+}
+
+#animationHome {
+    position: absolute;
+    top: 210px; 
+    width: 320%;
+    left: 800px;
+}
+
+.room {
+    width: 100%;
+    height: 400px;
+    background: url(images/home_animation/room.png);
+    background-size: cover;
+    
+}
+
+
+.door {
+    position:absolute;
+    top: 144px;
+    right: 200px;
+    
+}
+
+.people1 {
+    position:absolute;
+    width: 50px;
+    top: 230px;
+    right: 140px;
+    z-index: 1;
+}
+
+.people2 {
+    position:absolute;
+    width: 50px;
+    top: 220px;
+    right: 300px;
+    z-index: 1;
+}
+
+.people3 {
+    position:absolute;
+    width: 60px;
+    top: 220px;
+    right: 220px;
+    z-index: 1;
+}
+.people4 {
+    position:absolute;
+    width: 60px;
+    top: 220px;
+    right: 60px;
+    z-index: 1;
+}
+
+.safe {
+    position:absolute;
+    width: 70px;
+    top: 230px;
+    right: 480px;
+    z-index: 1;
+}
+
+.key {
+    position:absolute;
+    width: 100px;
+    top: 80px;
+    right: 80px;
+    z-index: 1;
+    
+    transform: rotate(-6deg)
+}
+
+#content {
+    margin-top: 100px;
+    position: absolute;
+}

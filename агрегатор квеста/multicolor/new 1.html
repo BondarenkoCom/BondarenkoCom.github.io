@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>TEST</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="isotope.pkgd.min.js"></script>
+</head>
+<body>
+<style>
+
+.button, .reset button {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: #EEE;
+  border: none;
+  border-radius: 7px;
+  background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
+  color: #222;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.button:hover, .reset button:hover {
+  background-color: #8CF;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked, .reset button:ative, .reset button.is-checked {
+  background-color: #28F;
+}
+
+.button.is-checked, .reset button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+  background-color: red;
+}
+
+.button:active, .reset button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+
+.button, .reset button {
+  float: left;
+  border-radius: 0;
+  margin-left: 0;
+  margin-right: 1px;
+}
+
+
+.ui-group {
+  display: inline-block;
+}
+.color-shape{
+border:1px solid red;}
+</style>
+
+<h1>Isotope - combination filters</h1>
+
+<div class="filters">
+
+
+
+<div class="reset ui-group">
+      <button class="is-checked">Все квесты</button>
+</div>
+  <div class="ui-group">
+    <div class="button-group js-radio-button-group" data-filter-group="activ-a">
+      <button class="button" data-filter=".activ">активный</button>
+    </div>
+  </div>
+  
+  <div class="ui-group">
+    <div class="button-group js-radio-button-group" data-filter-group="actor-a">
+      <button class="button" data-filter=".actor">с актером</button>
+      <button class="button" data-filter=".noactor">без актера</button>
+    </div>
+  </div>
+  
+  <div class="ui-group">
+    <div class="button-group js-radio-button-group" data-filter-group="strah-a">
+      <button class="button" data-filter=".strah">страшный</button>
+      <button class="button" data-filter=".nestrah">не страшный</button>
+    </div>
+  </div>
+  
+  <div class="ui-group">
+    <div class="button-group js-radio-button-group" data-filter-group="big-a">
+      <button class="button" data-filter=".big">большой</button>
+    </div>
+  </div>
+  
+  <div class="ui-group">
+    <div class="button-group js-radio-button-group" data-filter-group="kids-a">
+      <button class="button" data-filter=".kids">для детей</button>
+    </div>
+  </div>
+  
+
+</div>
+
+<div class="grid">
+  <div class="color-shape strah big">страшный большой</div>
+  <div class="color-shape nestrah big">не страшный большой</div>
+  <div class="color-shape strah actor kids">страшный с актером дети</div>
+  <div class="color-shape nestrah actor activ">не страшный с актером активный</div>
+  <div class="color-shape big activ">активный большой</div>
+  <div class="color-shape kids noactor">дети без актера</div>
+  <div class="color-shape kids activ">дети активный</div>
+  <div class="color-shape nestrah noactor">не страшный без актера</div>
+  <div class="color-shape kids big">болшой для детей</div>
+</div>
+
+<script>
+
+$(".reset").click(function(){
+	$grid.isotope({ filter: '' });
+	$('.is-checked').removeClass('is-checked');
+    $(".reset button").addClass('is-checked');
+	var $button = $(".button");
+	var $buttonGroup = $button.parents('.button-group');
+	var filterGroup = $buttonGroup.attr('data-filter-group');
+	filters[ filterGroup ] = $button.attr('data-filter');
+	var filterValue = concatValues( filters );
+	$grid.isotope({ filter: '' });
+
+});
+
+
+var $grid = $('.grid').isotope({
+  itemSelector: '.color-shape'
+});
+
+var filters = {};
+
+$('.filters').on( 'click', '.button', function( event ) {
+  var $button = $( event.currentTarget );
+  var $buttonGroup = $button.parents('.button-group');
+  var filterGroup = $buttonGroup.attr('data-filter-group');
+  filters[ filterGroup ] = $button.attr('data-filter');
+  var filterValue = concatValues( filters );
+  $grid.isotope({ filter: filterValue });
+  
+  alert(concatValues( filters ));
+});
+
+$('.button-group').each( function( i, buttonGroup ) {
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function( event ) {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    var $button = $( event.currentTarget );
+    $button.addClass('is-checked');
+	$('.reset button').removeClass('is-checked');
+  });
+});
+
+function concatValues( obj ) {
+  var value = '';
+  for ( var prop in obj ) {
+    value += obj[ prop ];
+  }
+  return value;
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
