@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       
+
+        function finalGrade(exam, projects) {
+            if (exam >= 90 || projects >= 10) {
+                console.log("100%");
+            } else if (exam > 75 && projects > 5) {
+                console.log("90%");
+            } else if (exam >= 50 && projects >= 2) {
+                console.log("75%");
+            } else {
+                console.log("0%");
+            }
+        }   
+
+        finalGrade(180, 13);
+        finalGrade(40, 122);
+        finalGrade(50,4);
+        finalGrade(0,0);
+
+
+        // END
+    </script>
+</body>
+</html>

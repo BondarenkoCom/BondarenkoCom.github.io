@@ -1,4 +1,3 @@
-
 #spaceAnimation {
     margin-top: 40px;
 }
@@ -10,58 +9,73 @@
     outline: 1px solid red;
 }
 
- #shipLow {
-     background: url(animationPlanet/ship_normal.png);
-     background-size: contain;
-     position: absolute;
-     width: 140px;
-     height: 150px;
-     top: 500px;
-     left: 300px;
-    
-     
+#shipLow {
+    background: url(animationPlanet/ship_normal.png);
+    background-size: contain;
+    position: absolute;
+    width: 140px;
+    height: 150px;
+    top: 500px;
+    left: 300px;
+
+
 }
 
 
 input:checked + #shipLow {
     -webkit-animation: linear 7s orbita;
-        
-     
-     
+
+
+
 }
 
 @-webkit-keyframes orbita {
-    0%{ }
-    25%{left: 600px; transform: rotateY(80deg); }
-    50%{left:330px;}
-    75%{top: 700px; transform: rotateY(180deg) ;}
-    100%{left: 10px;}  
+    0% {}
+
+    25% {
+        left: 600px;
+        transform: rotateY(80deg);
+    }
+
+    50% {
+        left: 330px;
+    }
+
+    75% {
+        top: 700px;
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        left: 10px;
+    }
 }
 
 /* sci girl animation */
 
 .animationCSS {
-    width:100%;
+    width: 100%;
     height: 900px;
     text-align: left;
-    
+
 }
+
 .one {
     background: url(animationPlanet/NodGirl.jpg);
     background-size: cover;
     width: 564px;
     height: 0px;
-    
+
     transition: height 2s linear;
     border-radius: 360px;
 }
 
-button:active + .one{
-    height: 500px;    
-    
+button:active + .one {
+    height: 500px;
+
     transition: height 2s linear;
     border-radius: 160px;
-     border: 3px solid red;
+    border: 3px solid red;
 }
 
 .two {
@@ -69,22 +83,25 @@ button:active + .one{
     background-size: cover;
     width: 564px;
     height: 0px;
-    
+
     transition: height 2s linear;
     transform: rotateX(180deg);
     border-radius: 310px;
+
+
 }
+
 input:checked + .two {
-    
-    
-    
+
+
+
     width: 564px;
     height: 837px;
     transition: height 3s linear;
-    transform:  rotateY(360deg);
-    
+    transform: rotateY(360deg);
+
     border: 3px solid red;
-    
+
 }
 
 .codeAnimGirl {
@@ -93,5 +110,37 @@ input:checked + .two {
     position: relative;
     bottom: 800px;
     right: -4%;
+
+}
+
+
+/* clock JS */
+
+.clockJS {
+    border: 5px solid red;
+    width: 520px;
     
+    background-color: #000;
+    
+}
+
+#clock {
+    font-weight: 300;
+    font-size: 120px;
+    text-align: center;
+    color: forestgreen;
+}
+
+#color {
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
+
+.butClock {
+    font-size: 25px;
+    position: absolute;
+    left:444px;
+    color: forestgreen;
+    background-color: black;
 }

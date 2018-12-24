@@ -87,7 +87,7 @@ body {
 #sidebar .toggle-btn:hover {
     background: url(theme/But1.png);
     background-size: cover;
-     /* переворот кнопки */
+    /* переворот кнопки */
     transform: rotate(360deg);
     transition: 2s;
 }
@@ -134,16 +134,16 @@ body {
 
 
     border-radius: 46px;
-    right:-278px;
+    right: -278px;
 
     -moz-transition: all 1300ms;
     -webkit-transition: all 1300ms;
     transition: all 1300ms;
-    
 
 
 
-    background: url(theme/menuNavCSS.png) ;
+
+    background: url(theme/menuNavCSS.png);
     background-size: cover;
 }
 
@@ -159,8 +159,8 @@ body {
     list-style: none;
     padding: 25px 10px 10px 10px;
     color: rgba(37, 186, 47, 1);
-    
-     
+
+
 }
 
 #sidebarCSS ul li:not(:first-child) {
@@ -168,7 +168,7 @@ body {
     margin-left: 25%;
     list-style: none;
     padding: 15px 10px;
-   
+
 }
 
 #sidebarCSS ul li a {
@@ -195,7 +195,7 @@ body {
     border-radius: 12px;
     cursor: pointer;
     transition: 0.9s;
-    
+
 }
 
 #sidebarCSS .toggle-btn:hover {
@@ -226,7 +226,7 @@ body {
 }
 
 .logoCSS {
-    margin-top: 85%;
+    margin-top: 65%;
     margin-left: 11%;
 
 }
@@ -295,6 +295,7 @@ td {
 
 
 /* operators html */
+
 .falseText {
     color: crimson;
 }
@@ -356,10 +357,197 @@ td {
     border: 2px solid blue;
     margin: 13px;
     padding: 7px;
-    
+
     width: 870px;
     text-align: center;
     margin-left: 250px;
     background: url(theme/bdyfill.jpg);
     background-size: contain;
 }
+
+/* sea battle.html */
+
+
+.textSeaBattle {
+    border: 2px solid blue;
+    width: 490px;
+    height: 240px;
+
+    text-align: center;
+}
+
+.project ul {
+    list-style: none;
+}
+
+/*  рисунок блок схемы */
+#blockSchem {
+    display: inline-block;
+    width: 500px;
+    padding-left: 160px;
+}
+
+#blockSchem .circle {
+
+    position: relative;
+    left: 50px;
+    text-align: center;
+
+    width: 100px;
+    height: 40px;
+    border: 10px solid red;
+    border-radius: 860px;
+
+    padding: 20px;
+    margin: 20px;
+}
+
+#blockSchem .rectangle {
+    text-align: center;
+
+    border: 10px solid green;
+    width: 200px;
+    height: 40px;
+    color: orangered;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+#blockSchem .rectangleIf {
+    position: relative;
+    left: 320px;
+    bottom: 230px;
+    text-align: center;
+    border: 10px solid green;
+    width: 200px;
+    height: 40px;
+
+    padding: 20px;
+    margin: 20px;
+}
+
+
+#blockSchem .diamond {
+    color: red;
+    text-align: center;
+
+    width: 120px;
+    height: 120px;
+    border: 10px solid blue;
+    /* Rotate */
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    /* Rotate Origin */
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+
+    margin: 80px 0px 0px 0px;
+    position: relative;
+    bottom: 90px;
+    left: 50px;
+
+}
+
+.textDiam {
+    padding-top: 10px;
+    padding-right: 32px;
+    text-align: center;
+    transform: rotate(-42deg);
+}
+
+.downArrow {
+    padding-left: 25%;
+}
+
+.rightArrow {
+    transform: rotate(-90deg);
+    position: relative;
+
+    right: 130px;
+    bottom: 225px;
+
+}
+
+.leftArrow {
+    position: relative;
+    right: 166px;
+    bottom: 300px;
+    height: 250px;
+    transform: rotateY(180deg);
+}
+
+.missArrow {
+    position: relative;
+    left: -180px;
+    bottom: 140px;
+    height: 250px;
+    transform: rotate(280deg);
+}
+
+.missText {
+    position: relative;
+    bottom: 330px;
+    right: 160px;
+
+    font-size: 30px;
+    color: dodgerblue;
+}
+
+.textLeftArrow {
+    position: relative;
+    bottom: 370px;
+    right: 160px;
+
+    font-size: 20px;
+    color: purple;
+}
+
+#textBlockSchem {}
+
+.playBattle {
+    display: inline-block;
+
+    position: absolute;
+}
+
+.playBattle:hover {
+
+
+    text-align: center;
+
+
+
+    width: 500px;
+
+    transform: rotateY(360deg);
+    transition: height 3s linear;
+    height: 400px;
+    background: url(img/logoShip.png);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid red;
+    border-radius: 13px;
+}
+
+.ButPlay:hover {
+    color: greenyellow;
+    background-color: gray;
+}
+
+.ButPlay {
+
+    border-radius: 13px;
+    border: 4px solid red;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: antiquewhite;
+}
+

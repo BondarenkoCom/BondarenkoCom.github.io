@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+
+
+    <link href="style.css" rel="stylesheet">
+    <link href="PlanetAnim.css" rel="stylesheet">
+
+    <meta property="og:title" content="страница функций " />
+    <meta property="og:description" content="моя песочница." />
+    <meta property="og:image" content="https://cdn-images-1.medium.com/max/1200/1*dAwQkc-E0j1AcpdPeGznzg.png" />
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Функции <strong style="color: orange">JavaScript</strong></h1>
+
+    </div>
+
+    <div id="content">
+
+        <div class="BlockFunction_1">
+            <div class="FunctionTextBlock">
+                <p>при помощи функций блок кода можно повторять много раз вызывая его <br>
+                    К примеру: </p>
+            </div>
+            <!-- найти ошибку -->
+            Dog name: <input id="name">
+            <br>
+            Dow weight: <input id="weight">
+            <br>
+            <button onclick="bark()"><strong style="font-size: 15px; margin: 12px;">says WOOF</strong></button>
+
+            <div id="result"></div>
+
+            <img src="resourse/functionBark.jpeg" alt="photo">
+
+            <script>
+                var DoGname = document.getElementById("name").value;
+                var DoGweight = document.getElementById("weight").value;
+
+                function bark() {
+                    if (DoGweight > 20) {
+                        document.getElementById("result").innerHTML = (DoGname + " says BIG DOG");
+                    } else {
+                        document.getElementById("result").innerHTML = (DoGname + " says little DOG");
+                    }
+                };
+            </script>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SEA BATTLE V1</title>
+
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="header">
+        <h1>SEA BATTLE V.1 на <strong style="color: orangered">JavaScript</strong></h1>
+        <h1>аналогия игры "морской бой" на словах </h1>
+
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="openNav()">
+            </div>
+            <ul>
+                <li><a class="colorUL" href="index.html">MENU</a> </li>
+                <li><a class="colorUL" href="variable.html">знакомства с переменныими</a></li>
+                <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
+
+                <li><a class="colorUL" href="operators.html">операторы</a></li>
+
+                <li><a class="colorUL" href="example.html">примеры</a></li>
+            </ul>
+            <img class="logo" src="img/logo2.png" width=200>
+        </div>
+
+        <div id="sidebarCSS">
+            <div class="toggle-btn" onclick="openNavCSS()"></div>
+            <ul>
+                <li>CSS</li>
+                <li><a class="colorUL" href="#">основы</a></li>
+                <li><a class="colorUL" href="animation.html">Анимация</a></li>
+                <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
+            </ul>
+            <img class="logoCSS" src="img/logo.png" width=194>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="textSeaBattle">
+            <h3>ЦЕЛЬ:</h3>
+            <p>Потопить корабли за минимальное количество ходов.</p>
+            <h3>КАК ИГРАТЬ:</h3>
+            <p>По запросу браузера игрок вводит координаты выстрела. <br>
+                Браузер проверяет клетку и вывводит результат: "Попал" , "Ранил" или "Убил". <br>
+                После того как все корабли уничтожены,игра заканчивается с выводом оценки.
+            </p>
+        </div>
+        <div class="project">
+            <h2>Начнем с проектирования</h2>
+            <strong>Нам понадобятся</strong>
+            <ul>
+                <li>Переменные</li>
+                <li>Числа</li>
+                <li>Строки</li>
+                <li>Циклы</li>
+            </ul>
+            <h3>Блок-схема</h3>
+            <div id="blockSchem">
+                <div class="circle">НАЧАЛО</div>
+                <img src="arrows/downArrow.png" class="downArrow" width="40" height="50">
+
+                <div class="rectangle">Подготовка</div>
+                <img src="arrows/downArrow.png" class="downArrow" width="40" height="50">
+
+                <div class="rectangle">Получение данных от пользователя</div>
+                <img src="arrows/downArrow.png" class="downArrow" width="40" height="50">
+
+                <div class="diamond">
+                    <p class="textDiam">Проверка результата</p>
+                    <img src="arrows/arrow_1.png" width="90" height="40" alt="arrow" class="missArrow">
+                    <p class="missText">промах</p>
+
+                </div>
+                <br>
+                <img src="arrows/downArrow.png" class="downArrow" width="40" height="50">
+                <div class="rectangleIf"> Отметить : попадание
+                    <img src="arrows/downArrow.png" class="rightArrow" width="40" height="50">
+
+                    <img src="arrows/arrow_1.png" width="90" height="40" alt="arrow" class="leftArrow">
+                    <p class="textLeftArrow">попадание</p>
+                </div>
+
+                <div class="rectangle">Отметить : корабль потоплен</div>
+                <img src="arrows/downArrow.png" class="downArrow" width="40" height="50">
+                <div class="rectangle">Вывод счета/оценки</div>
+                <img src="arrows/downArrow.png" class="downArrow" width="40" height="50">
+                <div class="circle">КОНЕЦ</div>
+            </div>
+
+            <!--    <div id="textBlockSchem"></div>
+              <h2>ПСЕВДОКОД </h2>
+                 <p>
+                  ОБЪЯВИТЬ три переменные для хранения позиции каждой клетки корабля. <br> 
+                  Присвоить им имена location1 , location2 , location3. <br>
+                  <br>
+                  ОБЪЯВИТЬ переменную для номера текущей попытки<br>
+                  Присвоить ей имя guess.
+                  <br>
+                  <br>
+                  ОБЪЯВИТЬ переменную для количества попаданий.
+                  <br>
+                  Присвоить ей имя HITS и инициализировать значением 0. <br>
+                  <br>
+                  ОБЪЯВИТЬ переменную для количества попыток. <br>
+                  Присвоить имя guesses и инициализировать значением 0. <br>
+                  <br>
+                  ОБЪЯВИТЬ переменную для хранения информации о том потоплен корабль или нет. <br>
+                  Присвоить ей имя isSUNK и инициализировать значением FALSE.                  
+              </p>
+              <hr style="height: 10px;">
+              <p> 
+                  
+                  
+              </p> -->
+
+
+            <div class="playBattle">
+
+                <a class="ButPlay" target="_blank" href="seaBattleGame.html">Нажми для игры в морской бой v.1
+                </a>
+               <div class="shipLogo"> </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

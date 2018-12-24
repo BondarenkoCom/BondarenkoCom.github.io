@@ -1,0 +1,88 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.instruction {
+    text-align: center;
+    
+}
+
+li {
+    list-style: none;
+}
+
+#containerCube {    
+    position: relative;
+    margin: 200px auto;
+    width: 300px;
+    height: 300px;
+    perspective: 500px;
+}
+
+.cube {
+    /* inherit это наследование род-элемента*/
+    width: inherit;
+    height: inherit;
+   
+    backface-visibility: hidden;
+    
+    transform-style: preserve-3d;
+    -webkit-transition: top 0.8s ease-out 1s;
+     -moz-transition:  top 0.8s ease-out 1s;
+     -o-transition: top 0.8s ease-out 1s;
+     transition: top 0.8s ease-out 1s;
+}
+
+.side  {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border: 3px solid grey;
+    font: normal 70px arial;
+    text-align: center;
+    line-height: 300px; 
+    backface-visibility: hidden;
+}
+
+.front {
+    transform: translateZ(150px);
+    background: url(imageCube/bowsette.gif);
+    background-size: cover;
+    
+}
+
+.back{
+    transform: rotateY(180deg) translateZ(150px);
+    background: url(imageCube/peach.gif);
+    background-size:cover;    
+    background-position: center;
+}
+
+.right  {
+    transform: rotateY(90deg) translateZ(150px);
+    background: url(imageCube/Samus.gif);
+    background-size: cover;
+    
+}
+
+.left {
+     transform: rotateY(-90deg) translateZ(150px);
+    background: url(imageCube/robot.gif);
+    background-size: contain;
+    background-position: center;
+}
+
+.top { 
+    transform: rotateX(90deg) translateZ(150px);
+    background: url(imageCube/warrior.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+    background: url(imageCube/jill.gif);
+    background-size: cover;
+    background-position: center;
+}
