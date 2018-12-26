@@ -10,39 +10,50 @@
 </head>
 
 <body>
-   <div id="sidebar">
-        <div class="toggle-btn" onclick="openNav()">
-        </div>
-        <ul>
-            <li><a  class="colorUL" href="index.html">MENU</a> </li>
-            <li><a  class="colorUL" href="variable.html">знакомства с переменныими</a></li>
-            <li><a  class="colorUL" href="ouput.html">командны вывода</a></li>
-            <li><a  class="colorUL" href="operators.html">операторы</a></li>
-            
-            
-              <li><a class="colorUL" href="example.html">примеры</a></li>
-         </ul>
-        <img class="logo" src="img/logo2.png" width=200>    
-    </div>
-    
-     <div id="sidebarCSS">
-        <div class="toggle-btn" onclick="openNavCSS()">
+    <div id="header">
+        <h1>Примеры кода на <strong style="color: orange">JavaScript</strong></h1>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="openNav()">
+            </div>
+            <ul>
+                <li><a class="colorUL" href="index.html">MENU</a> </li>
+                <li><a class="colorUL" href="variable.html">знакомства с переменныими</a></li>
+                <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
 
+                <li><a class="colorUL" href="operators.html">операторы</a></li>
+
+                <li><a class="colorUL" href="example.html">примеры</a></li>
+
+                <li><a class="colorUL" href="function.html">функции</a></li>
+
+
+
+            </ul>
+            <img class="logo" src="img/logo2.png" width=200>
         </div>
-       <ul>
-            <li>CSS</li>
-            <li><a class="colorUL" href="#">основы</a></li>
-            <li><a class="colorUL" href="animation.html">Анимация</a></li>
+
+        <div id="sidebarCSS">
+            <div class="toggle-btn" onclick="openNavCSS()">
+
+            </div>
+            <ul>
+                <li>CSS</li>
+                <li><a class="colorUL" href="#">основы</a></li>
+                <li><a class="colorUL" href="animation.html">Анимация</a></li>
+
+                <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
+                <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
             </ul>
 
-       <img class="logoCSS" src="img/logo2.png" width=200>
+            <img class="logoCSS" src="img/logo.png" width=194>
+        </div>
     </div>
-    
-    
+
+
     <hr>
     <div class="content">
-    <h1>знакомство и работа с переменными</h1>
-    
+        <h1>знакомство и работа с переменными</h1>
+
         <p>
             <strong>Переменная-</strong>это именнованная область памяти ,к которой можно обращаться по имени<br>
             таким образом у переменной есть имя (которое дал разработчик)<br>
@@ -100,6 +111,34 @@
         <br>
         <button onclick="funcEval()">жми чтоб увидеть результат</button>
     </div>
+
+
+    <div class="factorialJsLet">
+        <h2>Вид переменной let</h2>
+        <p>Переменные let:
+
+        </p>
+
+        <ol>
+            <li>Видны только после объявления и только в текущем блоке.
+            </li>
+            <li>Нельзя переобъявлять (в том же блоке).
+            </li>
+            <li>При объявлении переменной в цикле for(let …) – она видна только в этом цикле. Причём каждой итерации соответствует своя переменная let.
+            </li>
+        </ol>
+    </div>
+    
+    <script>
+    let factorial = 1;
+        
+        function factor() {
+        w
+            
+        }
+        
+    </script>
+    
 </body>
 
 </html>

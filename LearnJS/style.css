@@ -551,3 +551,19 @@ td {
     color: antiquewhite;
 }
 
+/* function html */
+
+#contentFunc {
+    text-align: center;
+    border: 5px solid green;
+    
+}
+
+.BlockFunction_1 {
+    border: 3px solid red;
+    width: 50%;
+    margin: auto;
+    background-color: dimgray;
+    color: darkred;
+}
+

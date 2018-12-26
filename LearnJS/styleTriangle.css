@@ -1,18 +1,6 @@
+/* triangle */
 
-*{
-    box-sizing: border-box;
-}
-
-.instruction {
-    text-align: center;
-    
-}
-
-li {
-    list-style: none;
-}
-
-#containerCube {    
+#containerTriangle {
     position: relative;
     margin: 200px auto;
     width: 300px;
@@ -20,7 +8,8 @@ li {
     perspective: 500px;
 }
 
-.cube {
+
+.triangle {
     /* inherit это наследование род-элемента*/
     width: inherit;
     height: inherit;
@@ -34,56 +23,53 @@ li {
      transition: top 0.8s ease-out 1s;
 }
 
-.side  {
+
+.sideT  {
     position: absolute;
     width: inherit;
     height: inherit;
-    border: 3px solid grey;
+    border: 3px solid green;
     font: normal 70px arial;
     text-align: center;
     line-height: 300px; 
-    backface-visibility: hidden;
+    backface-visibility: visible;
 }
 
-.front {
-    transform: translateZ(150px);
-    background: url(imageCube/bowsette.gif);
-    background-size: cover;
-    
-}
 
-.back{
-    transform: rotateY(180deg) translateZ(150px);
+
+
+
+.backT{
+    transform: rotateY(180deg) translateZ(950px);
     background: url(imageCube/peach.gif);
     background-size:cover;    
     background-position: center;
 }
 
-.right  {
+.rightT  {
     transform: rotateY(90deg) translateZ(150px);
     background: url(imageCube/Samus.gif);
     background-size: cover;
     
 }
 
-.left {
+.leftT {
      transform: rotateY(-90deg) translateZ(150px);
     background: url(imageCube/robot.gif);
     background-size: contain;
     background-position: center;
 }
 
-.top { 
+.topT { 
     transform: rotateX(90deg) translateZ(150px);
     background: url(imageCube/warrior.gif);
     background-size: cover;
     background-position: center;
 }
 
-.bottom {
+.bottomT {
     transform: rotateX(-90deg) translateZ(150px);
     background: url(imageCube/jill.gif);
     background-size: cover;
     background-position: center;
 }
-
