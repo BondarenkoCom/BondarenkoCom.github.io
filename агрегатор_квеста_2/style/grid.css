@@ -1,0 +1,10 @@
+#header-grid {
+   display: grid;
+   justify-items: center;
+    
+}
+
+.head-block {
+    display: grid;
+    width: 60%;
+}
