@@ -1,10 +1,43 @@
-#header-grid {
-   display: grid;
-   justify-items: center;
-    
+
+
+.head_block_grid {
+    display: grid;
+    grid-template-columns:
+        /* 1 */
+        3fr
+        /* 2 */
+        1fr
 }
 
-.head-block {
+.head_block_grid p {}
+
+.head_block_grid img {}
+
+.header-grid a, img {
+
     display: grid;
-    width: 60%;
+    justify-items: center;
+
+
+}
+
+
+.header-grid a {
+    width: 20%;
+}
+
+/* создание фона футера */
+.footer-grid {
+
+    background: url(../image/footer.png);
+    background-size: contain;
+   
+    height: 140px;
+    
+    
+    margin-top: 5%;
+    
+    
+ 
+   
 }
