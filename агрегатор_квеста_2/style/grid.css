@@ -1,45 +1,26 @@
 
 
-.head_block_grid {
+
+
+.header-grid {
     display: grid;
-    grid-template-columns:
-        /* 1 */
-        3fr
-        /* 2 */
-        1fr
-}
+    grid-template-columns: 1fr 1fr 1fr ;
 
-.head_block_grid p {}
+    font-family: 'Amatic SC', cursive;
+    font-size: 34px;
 
-.head_block_grid img {}
-
-.header-grid a, img {
-
-    display: grid;
-    justify-items: center;
-
-
+    background: url(../image/gearsBack.png);
+    background-size: cover;
+   
+    height: 130px;
+    
 }
 
 
-.header-grid a {
-    width: 20%;
-}
 
 /* создание фона футера */
-.footer-grid {
 
-    background: url(../image/footer.png);
-    background-size: contain;
-   
-    height: 140px;
-    
-    
-    margin-top: 60%;
-    position:static;
-    
-    
-    
- 
-   
+#grid_slider_List {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- МЕТА -->
-    <title>агрегатор</title>
+    <title>дивергент</title>
     <meta name="description" content="#">
     <meta name="keywords" content="мета-теги, шаблон, html, css">
 
@@ -82,122 +83,96 @@
     <!-- Яндекс.Браузер -->
     <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/grid.css">
-    <link rel="stylesheet" href="style/stylePure.css">
-
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/grid.css">
+    <link rel="stylesheet" href="../style/stylePure.css">
+    <link rel="stylesheet" href="../style/StyleSlider.css">
+    <link rel="stylesheet" href="../style/divergent.css">
 </head>
 
 <body>
-    <div class="header-grid">
-        <img class="logoBack" src="image/logo.png" alt="logo">
 
-        <a href="#">каталог</a>
+    <div class="header-grid">
+        <img class="logoBack" src="../image/logo.png" alt="logo">
+
+        <a href="../index.html">Главная</a>
         <a href="#">контакты</a>
 
     </div>
 
     <div class="aboutUs">
         <hr style="height: 4px; background-color: firebrick">
-        <h3>кто мы</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sed ipsum fugiat delectus animi ea error, dolorem qui, facilis deserunt assumenda eaque suscipit. Doloremque repellat, praesentium atque in rerum sapiente.</p>
+        <h3>Что такое фильтрация?</h3>
         <hr style="height: 4px; background-color: firebrick">
 
+
+
     </div>
 
-    <div class="filter">
+    <div class="container">
+
+        <p>
+            Компания QH считает, что население Земли можно поделить на несколько сегментов. Пять так называемых фракций: Эрудиция, Дружелюбие, Отречение, Искренность и Бесстрашие. Проект фильтрация помогает определить к чему склонен индивид, и какой путь для него будет наиболее рационален. Мы формируем идеальное общество.
+            <br>
+
+            <strong>Пройди фильтрацию и становись в наши ряды!</strong>
+            <br>
+            <strong style="color: orangered;">Ты опасен, если ты другой.</strong>
+        </p>
+        <hr style="height: 4px; background-color: firebrick">
 
 
-        <div class="container">
+        <div id="grid_slider_List">
 
-            <input type="radio" id="blue" name="color" />
-            <label for="blue">страшные</label>
-            <input type="radio" id="red" name="color" />
-            <label for="red">не страшные</label>
-            <input type="radio" id="green" name="color" />
-            <label for="green">с актерами</label>
-            <input type="radio" id="reset" name="color" />
-            <label for="reset">все</label>
+            <div class="ListGreat">
 
-
-
-            <div class="tile blue wiy">
-
-                <h2>ВИЙ</h2>
-
-                <img src="image/icons/human.png" alt="people" width="45">
-
-                <strong style="font-size: 20px;">2-4(6) человек</strong>
-
-
-
-                <img class="difficult" src="image/icons/diffucult.png" alt="diff" width="45">
-
-                <strong style="font-size: 20px;">7/10 сложность</strong>
-
-                <a href="/catalog_quests/wyi.html" class="order">забронировать</a>
-
+                <h3 style="color: orangered;">Наши преимущества</h3>
+                <ul>
+                    <li>75 мин - время процедуры фильтрации</li>
+                    <li>2-5 чел - на один сеанс</li>
+                    <li>Удобная форма одежды</li>
+                    <li>16+ - для взрослых индивидуумов</li>
+                </ul>
             </div>
 
+            <div class="slider_feature">
+                   
+                    <a class="prevF" onclick="plusSlides(-1)"> &#10094
 
+                    </a>
+                    <a class="nextF" onclick="plusSlides(1)">
+                        &#10095
+                    </a>
+                    <div class="mySlides fade">
+                        <img src="../image/diverImage/sliderImg1.jpg" height=350px width=100%>
+                       </div>
 
-            <div class="tile red diver">
-                <h2>Дивергент</h2>
+                    <div class="mySlides fade">
+                        <img src="../image/diverImage/redGasMask1.jpg"  height=350px width=100%>
+                        </div>
 
-                <img src="image/icons/human.png" alt="people" width="45">
-
-
-
-                <strong style="font-size: 20px;">2-5 человек</strong>
-
-                <img class="difficult" src="image/icons/diffucult.png" alt="diff" width="45">
-
-                <strong style="font-size: 20px;">6/10 сложность</strong>
-
-                <a href="/catalog_quests/divergent.html" class="order">забронировать</a>
-
+                    <div class="mySlides fade">
+                        <img src="../image/diverImage/diverBlueBack.jpg" height=350px width=100%>
+                       
+                    </div>
+                   
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+            
+        </div>  
+        <script src="../slider.js"></script>
             </div>
-
-
-            <div class="tile blue chainsaw">
-                
-                 <h2>Техасская резня бензопилой</h2>
-
-                <img src="image/icons/human.png" alt="people" width="45">
-
-                <strong style="font-size: 20px;">2-6 человек</strong>
-
-
-
-                <img class="difficult" src="image/icons/diffucult.png" alt="diff" width="45">
-
-                <strong style="font-size: 20px;">2/10 сложность</strong>
-
-                <a href="/catalog_quests/ChainsawMassacre.html" class="order">забронировать</a>
-                
-            </div>
-            <div class="tile green">4</div>
-            <div class="tile blue">5</div>
-            <div class="tile red">6</div>
-            <div class="tile red">7</div>
-            <div class="tile green">8</div>
-            <div class="tile blue">9</div>
-            <div class="tile green">10</div>
-            <div class="tile red">11</div>
-            <div class="tile green">12</div>
-            <div class="tile blue">13</div>
-            <div class="tile blue">14</div>
-            <div class="tile green">15</div>
-            <div class="tile red">16</div>
         </div>
+    
 
-        <script src="js/index.js"></script>
-    </div>
+    
 
+    <iframe id="BookFormWidget" height="500px" src="https://widget.bookform.ru/529?"></iframe>
 
-
-    <div class="footer-grid">
-
-    </div>
 </body>
+
 </html>

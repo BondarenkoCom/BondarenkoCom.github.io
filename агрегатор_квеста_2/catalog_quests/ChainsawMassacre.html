@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- МЕТА -->
-    <title>агрегатор</title>
+    <title>Техасская Резня Бензопилой</title>
     <meta name="description" content="#">
     <meta name="keywords" content="мета-теги, шаблон, html, css">
 
@@ -85,35 +85,113 @@
 
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/grid.css">
-    <!--<link rel="stylesheet" href="../style/accordion.css"> -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="../style/accordeon.css">
-
+    <link rel="stylesheet" href="../style/stylePure.css">
+    <link rel="stylesheet" href="../style/StyleSlider.css">
+    <link rel="stylesheet" href="../style/chainsaw.css">
+    
 
 </head>
 
 <body>
 
     <div class="header-grid">
-        <img src="../image/logo.png" alt="logo">
+        <img class="logoBack" src="../image/logo.png" alt="logo">
 
-        <a href="../index.html">главная</a>
-        <a href="#">подобрать по расположению</a>
-        <div class="head_block_grid">
+        <a href="../index.html">Главная</a>
+        <a href="#">контакты</a>
+
+    </div>
+
+    <div class="aboutUs">
+        <hr style="height: 4px; background-color: firebrick">
+        <h3>Что такое Техасская резня бензопилой?</h3>
+        <hr style="height: 4px; background-color: firebrick">
+
+
+
+    </div>
+
+    <div class="container">
+
+        <p>
+            В штате Техас, на ферме обычного работника скотобойни Томаса Хьюитта, полиция обнаружила 33 изувеченных человеческих тела. Ужасающее открытие шокировало людей и было названо самым жутким массовым убийством за все время. 
+              Газеты писали: «Дом террора национального масштаба. Бойня в Техасе». Пресса окрестила убийцу как «человек с лицом из кожи».
+                Местные власти застрелили человека, носившего на лице кожаную маску. Дело было закрыто. Но в последующие годы множество убийств показало, что полиция нашла не того преступника. 
+                
+                Случайно уцелевший свидетель рассказал настоящую историю того, что на самом деле произошло на заброшенном техасском шоссе, когда пятеро подростков из-за сломавшейся машины оказались в ловушке у безумного человека с бензопилой…
+        </p>
+        <hr style="height: 4px; background-color: firebrick">
+
+
+        <div id="grid_slider_List">
+
+            <div class="ListGreat">
+
+                <h3 style="color: orangered;">Наши преимущества</h3>
+                <ul>
+                    <li>66 мин - время прохождения</li>
+                    <li>2-6 чел - на один сеанс</li>
+                    <li>16+ (с 14 лет в сопровождении взрослых) </li>
+                    <li>цена от 5000 руб</li>
+                </ul>
+            </div>
+
+
+            <div class="slider_feature">
+
+                <a class="prevF" onclick="plusSlides(-1)"> &#10094
+
+                </a>
+                <a class="nextF" onclick="plusSlides(1)">
+                    &#10095
+                </a>
+                <div class="mySlides fade">
+                    <img src="../image/reznyaImage/rezArt1.jpg" style="width: 100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../image/reznyaImage/rezArt2.jpg" style="width: 100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="../image/reznyaImage/rezArt3.jpg" style="width: 100%">
+                </div>
+                
+             
+                
+
+                <br>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+            <script src="../slider.js"></script>
         </div>
-    </div>
 
 
-    <div class="container-grid">
+
+        <iframe style="max-width: 1052px;
+    height: 728px;
+    margin: auto;
+    min-width: 320px;
+    width: 100%;
+    display: block;" src="https://booking.questcompass.ru/tehasskaja-reznja-benzopiloj/book?metrika=&style=" frameborder="0" id="bookwin" seamless>
+</iframe>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+        window.addEventListener('message',function (d) { if (d.origin == 'https://booking.questcompass.ru') document.getElementById('bookwin').style.height=d.data+'px'; });
+    });
+</script>
         
-
+        <p>
+            Адрес: г. Москва, ул. Золотая д. 11   <strong style="color: orange">+7 (499) 504-42-08</strong>   <br> 
+             <img src="../image/icons/LogoMetro.svg.png" width="40" height="25" alt=""> Семеновская, Электрозаводская
+        </p>
+        
     </div>
-
-    <div class="footer-grid"></div>
-
-
-
 </body>
 
 </html>

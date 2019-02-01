@@ -1,0 +1,10 @@
+body {
+
+    background-image: linear-gradient(to top,  #a81111 20%, transparent 30%) , url(../image/diverImage/redGasMask1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+p , ul,h3  {
+  color: aliceblue;  
+}
