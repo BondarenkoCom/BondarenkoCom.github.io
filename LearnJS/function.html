@@ -28,9 +28,9 @@
                 <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
 
                 <li><a class="colorUL" href="operators.html">операторы</a></li>
-       
+
                 <li><a class="colorUL" href="example.html">примеры</a></li>
-                
+
                 <li><a class="colorUL" href="function.html">функции</a></li>
 
             </ul>
@@ -45,8 +45,12 @@
                 <li>CSS</li>
                 <li><a class="colorUL" href="#">основы</a></li>
                 <li><a class="colorUL" href="animation.html">Анимация</a></li>
-                 <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
+                <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
                 <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
+                
+                <li><a class="colorUL" href="function.html">функции</a></li>
+                
+               <li><a class="colorUL" href="MachineLearn.html">умная машина</a></li>
             </ul>
 
             <img class="logoCSS" src="img/logo.png" width=194>
@@ -75,7 +79,7 @@
                 var DoGname = document.getElementById("name").value;
                 var DoGweight = document.getElementById("weight").value;
                 var result = document.getElementById("result").value;
-                
+
                 function bark() {
                     if (DoGweight > 20) {
                         document.getElementById("result").innerHTML = (DoGname + " says BIG DOG");
@@ -84,40 +88,49 @@
                     };
                     return result;
                 };
-                
+
             </script>
         </div>
-        
+
         <div class="FunctionReturn">
             <h2>Возвращение значений с помощью функций</h2>
             <p>
-                после первого примера мы умеем отправлять значаение при помощи <strong>аргументов</strong> ,но что насчет обратной связи ? 
+                после первого примера мы умеем отправлять значаение при помощи <strong>аргументов</strong> ,но что насчет обратной связи ?
                 <br>
-                 Может ли функция передать что нибудь пользователю?
+                Может ли функция передать что нибудь пользователю?
                 <br>
                 команда  <strong style="color: firebrick">RETURN</strong>
             </p>
-            
+
             <button onclick="bake()">click me</button>
             <p style="color: orangered; font-size: 30px" id="message"></p>
+            <p style="color: dodgerblue; font-size: 30px" id="message"></p>
             <img src="resourse/nuclear.jpeg" alt="photo">
-            
+
             <script>
-            function bake(degrees) {
-                var input = prompt( "введи число от 100 до 1000");
-                var message;
-                
-                if (input > 500) {
-                    message = "Я не ядерный реактор!";
-                } else if (input < 100) {
-                    message = "Я не холодильник!";
-                } else {
-                    message = "вот это комфортная для меня температура!";
+                function bake(degrees) {
+                    var input = prompt("введи число от 100 до 1000");
+                    var message;
+
+
+                    if (input > 500) {
+                        message = "Я не ядерный реактор!";
+                    } else if (input < 100) {
+                        message = "Я не холодильник!";
+                       
+                    } else {
+                        message = "вот это комфортная для меня температура!";
+                    }
+                    return document.getElementById("message").innerHTML = (message);
+
+
+
+
+
                 }
-                return document.getElementById("message").innerHTML = (message);
-            }
+
             </script>
-            
+
         </div>
     </div>
 

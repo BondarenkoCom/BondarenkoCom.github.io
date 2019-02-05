@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Function</title>
+
+
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="PlanetAnim.css" rel="stylesheet">
+
+    <meta property="og:title" content="страница анимации " />
+    <meta property="og:description" content="моя песочница." />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Animated-runner.svg/1024px-Animated-runner.svg.png" />
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>умная <strong style="color: orange">Машина</strong></h1>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="openNav()">
+            </div>
+            <ul>
+                <li><a class="colorUL" href="index.html">MENU</a> </li>
+                <li><a class="colorUL" href="variable.html">знакомства с переменныими</a></li>
+                <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
+
+                <li><a class="colorUL" href="operators.html">операторы</a></li>
+
+                <li><a class="colorUL" href="example.html">примеры</a></li>
+
+                <li><a class="colorUL" href="function.html">функции</a></li>
+
+            </ul>
+            <img class="logo" src="img/logo2.png" width=200>
+        </div>
+
+        <div id="sidebarCSS">
+            <div class="toggle-btn" onclick="openNavCSS()">
+
+            </div>
+            <ul>
+                <li>CSS</li>
+                <li><a class="colorUL" href="#">основы</a></li>
+                <li><a class="colorUL" href="animation.html">Анимация</a></li>
+                <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
+                <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
+                <li><a class="colorUL" href="MachineLearn.html">умная машина</a></li>
+            </ul>
+
+            <img class="logoCSS" src="img/logo.png" width=194>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <script>
+            //создание функции,имени и параметра TIMES
+            function clunk(times) {
+                //создание переменной с именем NUM
+                var num = times;
+                //ЦИКЛ while будет работать пока NUM больше 0
+                while (num > 0) {
+
+                    display("clunk");
+                    //каждое действие цикла это ВЫЧЕСТЬ из переменной NUM единицу
+                    num = num - 1;
+                }
+            }
+
+
+            // создание функции,имени и параметра SIZE 
+            function thinkMachine(size) {
+                //создание переменной
+                var facky = 1;
+                clunkCounter = 0;
+
+                //УСЛОВИЕ ЕСЛИ   SIZE равен 0 тогда выведи clank 
+                if (size == 0) {
+                    display("clank");
+                } 
+                //ИЛИ ЕСЛИ  size равен 1 тогда thunk
+                else if (size == 1) {
+                    display("thunk");
+                }
+                //в ином случае умножай и вычитай  ЦИКЛОМ пока size больше 1 
+                else {
+                    while (size > 1) {
+                        facky = facky * size;
+                        size = size - 1;
+                    }
+                    clunk(facky);
+                }
+            }
+            
+            function display(output) {
+                console.log(output)
+                clunkCounter++;
+            }
+            
+            var clunkCounter = 0;
+            thinkMachine(5);
+            console.log(clunkCounter);
+            
+            
+             
+
+        </script>
+    </div>
+
+</body>
+
+</html>
