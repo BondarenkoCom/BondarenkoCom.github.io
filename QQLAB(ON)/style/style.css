@@ -27,14 +27,15 @@ a {
     cursor: pointer;
 
 
-    border-radius: 40px;
-    border: 2px solid grey;
+    border-radius: 20px;
+    border: 2px solid lightslategrey;
     height: 40px;
 
-    background-color: grey;
+    background-color: lightslategrey;
 }
 a:hover {
     color: chartreuse;
+    
 }
 a:after {
 
@@ -108,9 +109,8 @@ a:focus:after {
 }
 
 .logoBack {
-    border-radius: 50px;
-    border: 1px solid grey;
-    background-color: dimgrey;
+    border-radius: 10px;
+    background-color: lightslategrey;
 }
 
 
