@@ -35,7 +35,16 @@ a {
 }
 a:hover {
     color: chartreuse;
+    border-color: chartreuse;
     
+    /*прозрачная структура*/
+    background: linear-gradient(90deg,
+        rgba(16, 171, 32, 0.6) 22%,
+        rgba(16, 171, 32, 0.6) 25%,
+        rgba(16, 171, 32, 0.6) 95%,
+        rgba(16, 171, 32, 0.6) 100%);
+    box-shadow: 0 0 25px rgba(16, 171, 32, 9),
+        inset 0 0 1px rgba(255, 255, 255, 0.6);
 }
 a:after {
 
@@ -94,7 +103,7 @@ a:focus:after {
 .aboutUs hr { 
     border-radius: 20px;
 }
-
+/*
 .order {
     width: 140px;
     height: 20px;
@@ -107,6 +116,7 @@ a:focus:after {
     border-color: #c41515;
     color: aliceblue;
 }
+*/
 
 .logoBack {
     border-radius: 10px;
@@ -149,7 +159,7 @@ a:focus:after {
 
 
 
-
+/*
 .next {
     float: right;
     position: relative;
@@ -193,3 +203,4 @@ a:focus:after {
 
 }
 
+*/

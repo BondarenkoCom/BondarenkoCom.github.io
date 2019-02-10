@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- МЕТА -->
-    <title>агрегатор</title>
+    <title>ТОЧКА НЕВОЗВРАТА</title>
     <meta name="description" content="#">
     <meta name="keywords" content="мета-теги, шаблон, html, css">
 
@@ -82,164 +83,139 @@
     <!-- Яндекс.Браузер -->
     <meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/grid.css">
-    <link rel="stylesheet" href="style/stylePure.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/grid.css">
+    <link rel="stylesheet" href="../style/stylePure.css">
+    <link rel="stylesheet" href="../style/StyleSlider.css">
+    <link rel="stylesheet" href="../style/NoReturn.css">
+
 
 </head>
 
 <body>
-    <div class="header-grid">
-        <img class="logoBack" src="image/QQLAB.png" alt="logo">
 
-        <a href="#">каталог</a>
+    <div class="header-grid">
+        <img class="logoBack" src="../image/QQLAB.png" alt="logo">
+
+        <a href="../index.html">Главная</a>
         <a href="#">контакты</a>
 
     </div>
 
     <div class="aboutUs">
         <hr style="height: 4px; background-color: firebrick">
-        <h3>кто мы</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sed ipsum fugiat delectus animi ea error, dolorem qui, facilis deserunt assumenda eaque suscipit. Doloremque repellat, praesentium atque in rerum sapiente.</p>
+        <h3>Что такое Точка невозврата?</h3>
         <hr style="height: 4px; background-color: firebrick">
 
+
+
     </div>
 
-    <div class="filter">
+    <div class="container">
+
+        <p class="textHeader">
+            Профессор создал систему, позволяющую вторгнуться в разум. Главная задача – внедрить чужеродную идею в голову испытуемого. А для этого придется постараться... Преодолев все ловушки подсознания, разобравшись в воспоминаниях человека, его эмоциях, дойти до «Точки невозврата». Риск велик! Действия группы могут вызвать необратимые последствия, как для себя, так и для общества…
+        </p>
+        <hr style="height: 4px; background-color: firebrick">
 
 
-        <div class="container">
+        <div id="grid_slider_List">
 
-           <input type="radio" id="reset" name="color" />
-            <label for="reset">все</label>
-            <input type="radio" id="blue" name="color" />
-            <label for="blue">страшные</label>
-            <input type="radio" id="red" name="color" />
-            <label for="red">не страшные</label>
-            <input type="radio" id="green" name="color" />
-            <label for="green">с актерами</label>
-            
+            <div class="ListGreat">
 
-
-
-            <div class="tile blue wiy ">
-
-                <h2>ВИЙ</h2>
-
-                <img src="image/icons/human.png" alt="people" width="45">
-
-                <strong style="font-size: 20px;">2-4(6) человек</strong>
-
-
-
-                <img class="difficult" src="image/icons/diffucult.png" alt="diff" width="45">
-
-                <strong style="font-size: 20px;">7/10 сложность</strong>
-
-                <a href="catalog/wyi.html" class="order">забронировать</a>
-
+                <h3 style="color: orangered;">Наши преимущества</h3>
+                <ul>
+                    <li>Проект создан совместно с командой «В.Р.Е.Д.» </li>
+                    <li>Двухэтажный дом</li>
+                    <li>Более четырех игровых локаций</li>
+                    <li>Дорогостоящие декорации и интерьер</li>
+                    <li>Сюжет по мотивам фильма «Начало» </li>
+                    <li>Единая история с квестом «Исходный код», не зависящая от порядка прохождения</li>
+                    <li>Музыкальное сопровождение от DJ El Ravi</li>
+                    <li>Наличие экшн-элементов</li>
+                    <li>Высокотехнологичные головоломки </li>
+                    <li>Концептуальная концовка </li>
+                    <li>Озвучка выполнена профессиональными актерами</li>
+                    <li style="color: firebrick">Рекомендуется удобная одежда.</li>
+                    <li style="color: firebrick">! Не рекомендуется людям с клаустрофобией.</li>
+                </ul>
             </div>
 
+            <div class="slider_feature">
 
+                <a class="prevF" onclick="plusSlides(-1)"> &#10094
 
-            <div class="tile red diver">
-                <h2>Дивергент</h2>
+                </a>
+                <a class="nextF" onclick="plusSlides(1)">
+                    &#10095
+                </a>
+                <div class="mySlides fade">
+                    <img src="../image/noPoinReturnImage/Art01.jpg" style="width: 100%">
+                </div>
 
-                <img src="image/icons/human.png" alt="people" width="45">
+                <div class="mySlides fade">
+                    <img src="../image/noPoinReturnImage/Art02.jpg" style="width: 100%">
+                </div>
 
+                <div class="mySlides fade">
+                    <img src="../image/noPoinReturnImage/Art03.jpg" style="width: 100%">
 
+                </div>
 
-                <strong style="font-size: 20px;">2-5 человек</strong>
+                <div class="mySlides fade">
+                    <img src="../image/noPoinReturnImage/Art04.jpg" style="width: 100%">
 
-                <img class="difficult" src="image/icons/diffucult.png" alt="diff" width="45">
+                </div>
 
-                <strong style="font-size: 20px;">6/10 сложность</strong>
+                <div class="mySlides fade">
+                    <img src="../image/noPoinReturnImage/Art5.jpg" style="width: 100%">
 
-                <a href="catalog/divergent.html" class="order">забронировать</a>
+                </div>
 
-            </div>
-
-
-            <div class="tile blue chainsaw">
-                
-                 <h2>Техасская резня бензопилой</h2>
-
-                <img src="image/icons/human.png" alt="people" width="45">
-
-                <strong style="font-size: 20px;">2-6 человек</strong>
-
-
-
-                <img class="difficult" src="image/icons/diffucult.png" alt="diff" width="45">
-
-                <strong style="font-size: 20px;">2/10 сложность</strong>
-
-                <a href="catalog/ChainsawMassacre.html" class="order">забронировать</a>
-                
-            </div>
-            
-            
-            
-            
-            <div class="tile red NoReturn">
-                <h2>Точка невозврата</h2>
-
-                <img src="image/icons/human.png" alt="people" width="45">
-
-
-
-                <strong style="font-size: 20px;">2-5 человек</strong>
-
-                <img class="difficult" src="image/icons/diffucult.png" alt="diff" width="45">
-
-                <strong style="font-size: 20px;">6/10 сложность</strong>
-
-                <a href="catalog/PoinTOfNoReturn.html" class="order">забронировать</a>
+                <br>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
 
             </div>
-            
-            
-             <div class="tile red TenBlackQuest">
-                <h2>10 Негритят</h2>
-
-                <img src="image/icons/human.png" alt="people" width="45">
-
-
-
-                <strong style="font-size: 20px;">2-10 человек</strong>
-
-                <img class="difficult" src="image/icons/diffucult.png" alt="diff" width="45">
-
-                <strong style="font-size: 20px;">6/10 сложность</strong>
-
-                <a href="catalog/TenBlackQuest.html" class="order">забронировать</a>
-
-            </div>
-            
-            <!--
-            <div class="tile green">4</div>
-            <div class="tile blue">5</div>
-            <div class="tile red">6</div>
-            <div class="tile red">7</div>
-            <div class="tile green">8</div>
-            <div class="tile blue">9</div>
-            <div class="tile green">10</div>
-            <div class="tile red">11</div>
-            <div class="tile green">12</div>
-            <div class="tile blue">13</div>
-            <div class="tile blue">14</div>
-            <div class="tile green">15</div>
-            <div class="tile red">16</div>
-            -->
+            <script src="../slider.js"></script>
         </div>
 
-        <script src="js/index.js"></script>
-    </div>
+
+       <div class="onlineOrder">
+            <h3>Онлайн бронирование</h3>
+            <p>Стоимость игры: <strong style="background-color: skyblue;border: 2px solid skyblue; color: black; border-radius: 20px;">3500 р.</strong> <strong style="background-color: darkorange;border: 2px solid darkorange; color: black; border-radius: 20px;">4000 р.</strong>
+            
+            <strong style="background-color: darkred;border: 2px solid darkored; color: black; border-radius: 20px;">4500 р.</strong>
+            
+              (Цена для команды из 2 человек, доплата за 3-5-го игроков - 600 руб./чел.)
+
+
+            </p>
+        </div>
+
+       
+        <iframe style="max-width: 1052px; height: 500px; margin: auto; min-width: 320px; width: 100%; display: block;" src="https://booking.questcompass.ru/tochka-nevozvrata/book?metrika=&amp;style=" frameborder="0" id="bookwin" seamless="">
+        </iframe>
 
 
 
-    <div class="footer-grid">
+        <p>
+            Адрес: г. Москва, Бизнес - центр "Персона Грата", Андроновское шоссе д.26c9
+            <br>
+            <img src="../image/icons/iconPhone.png" width="40" height="40" alt="">
+            <strong style="color: orange">+7 (499) 394-64-39</strong> <br>
+            <img src="../image/icons/LogoMetro.svg.png" width="40" height="25" alt=""> Авиамоторная
+        </p>
+        
+        
+   
+
+
 
     </div>
 </body>
+
 </html>

@@ -34,11 +34,10 @@ label {
 }
 
 input[type="radio"][id="blue"]:checked + label {
-   
-    background: url(../image/blood.gif);
-    background-size: cover;
-    background-color: black;
+   background: black;
     color: darkred;
+    
+    
 }
 
 input[type="radio"][id="blue"]:checked ~ .red,
@@ -130,6 +129,22 @@ input[type="radio"][id="reset"]:checked + label {
 }
 
 
+.order {
+    width: 140px;
+    height: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #c41515;
+    border-color: #c41515;
+    color: aliceblue;
+    
+    border: 1px solid aliceblue;
+    
+}
+
 .diver {
     background: url(../image/diverImage/redGasMask1.jpg);
     background-size: cover;
@@ -152,4 +167,16 @@ input[type="radio"][id="reset"]:checked + label {
    
 }
 
+.NoReturn {
+    
+    background: url(../image/noPoinReturnImage/Art01.jpg);
+    background-size: cover;
+    
+   
+}
 
+.TenBlackQuest {
+    
+     background: url(../image/tenBlackQuest/Art2.jpg);
+    background-size: cover;
+}
