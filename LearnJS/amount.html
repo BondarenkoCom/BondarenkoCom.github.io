@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>загадка холмса</title>
+
+
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="PlanetAnim.css" rel="stylesheet">
+
+    <meta property="og:title" content="страница анимации " />
+    <meta property="og:description" content="моя песочница." />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Animated-runner.svg/1024px-Animated-runner.svg.png" />
+</head>
+
+<body>
+
+    <div id="header">
+        <h1> загадка с кодом</h1>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="openNav()">
+            </div>
+            <ul>
+                <li><a class="colorUL" href="index.html">MENU</a> </li>
+                <li><a class="colorUL" href="variable.html">знакомства с переменныими</a></li>
+                <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
+
+                <li><a class="colorUL" href="operators.html">операторы</a></li>
+
+                <li><a class="colorUL" href="example.html">примеры</a></li>
+
+                <li><a class="colorUL" href="function.html">функции</a></li>
+
+            </ul>
+            <img class="logo" src="img/logo2.png" width=200>
+        </div>
+
+        <div id="sidebarCSS">
+            <div class="toggle-btn" onclick="openNavCSS()">
+
+            </div>
+            <ul>
+                <li>CSS/JS</li>
+                <li><a class="colorUL" href="#">основы</a></li>
+                <li><a class="colorUL" href="animation.html">Анимация</a></li>
+                <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
+                <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
+                <li><a class="colorUL" href="MachineLearn.html">отрисовка canvas</a>
+                </li>
+                
+                
+            </ul>
+
+            <img class="logoCSS" src="img/logo.png" width=194>
+        </div>
+    </div>
+
+
+    <div class="container">
+       <div>
+           <h2>Дело незадачливого грабителя</h2>
+           
+           <p>Шерлок закончил свой телефонный разговор  с начальником полиции,уселся у камина и снова взялся за газету.Ватсон вопросительно посмотрел на него. </p>
+           
+           <ul>
+               <li> "Что такое?" - спросил Шерлок,не отрываясь от газеты.</li>
+               <li>"Ну как?Что сказал Лестрейд? " - поинтересовался Ватсон.</li>
+               <li> " Он сказал,он сказал что они нашли посторонни код на банковском счете,с которым происходит что-то подозрительное" </li>
+               <li>"И?" - продолжал Ватсон,тщетно пытаясь скрыть нетерпение.</li>
+               <li> "Лейстрейд переслал мне код,ая сказал что премтупник допустил фатальную ошибку, и ему все равно не удастя ничего украсть," - ответил Шерлок. </li>     <li>"Откуда вы знаете?" - спросил Ватсон.</li>
+               <li>"Это очевидно если знаешь куда смотреть", - воскликнул Шерлок. - А теперь перестаньте отвлекать меня вопросами и дайте спокойно дочитать. "</li>
+                        
+           </ul>
+         <p>
+             Пока Шерлок читал газету,Ватсон украдкой заглянул в телефон Шерлока чтобы увидеть сообщение Лестрейда и нашел код.
+         </p>
+           
+           <img src="resourse/watson.jpeg" alt="art">
+           
+           
+           
+           <script>
+           //переменная которая содержит в себе данные баланса 
+           var balance = 10500;
+           //переменная которая содержит булевое значение о состоянии камер    
+           var cameraOn = true;
+               
+               function steal(balance , amount) {
+                   cameraOn = false;
+                   
+                   if (amount < balance) {
+                       balance = balance - amount;
+                   }
+                   return amount = steal(balance , 1250);
+                   alert ("Criminal: you stole " + amount + "!");                   
+               }
+           </script>
+           
+       </div>
+    </div>
+
+</body>
+
+</html>
