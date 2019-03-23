@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+        }
+
+        function showOk() {
+            alert("тогда марш работать");
+        }
+
+        function showCancel() {
+            alert("ОЙ ВЭЙ");
+        }
+
+
+        ask("Вы хотите работу в  BBDO?", showOk, showCancel);
+
+    </script>
+</body>
+
+</html>
