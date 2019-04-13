@@ -26,11 +26,14 @@
                 <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
 
                 <li><a class="colorUL" href="operators.html">операторы</a></li>
-       
-                <li><a class="colorUL" href="example.html">примеры</a></li>
-                
-                <li><a class="colorUL" href="function.html">функции</a></li>
 
+                <li><a class="colorUL" href="example.html">примеры</a></li>
+
+                <li><a class="colorUL" href="function.html">функции</a></li>
+                
+                <li><a class="colorUL" href="array.html">массивы</a></li>
+                
+                
             </ul>
             <img class="logo" src="img/logo2.png" width=200>
         </div>
@@ -43,7 +46,7 @@
                 <li>CSS</li>
                 <li><a class="colorUL" href="#">основы</a></li>
                 <li><a class="colorUL" href="animation.html">Анимация</a></li>
-                 <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
+                <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
                 <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
             </ul>
 
@@ -75,6 +78,8 @@
 
         </div>
 
+
+        <h2>Часы</h2>
         <button onclick="funcCkickClock()" class="butClock">play code</button>
         <p id="clock2"></p>
         <div class="clockJS">
@@ -132,7 +137,65 @@
 
         </script>
 
+        <h2>My First JavaScript</h2>
 
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.</button>
+
+        <p id="demo"></p>
+
+        <h2>math JS</h2>
+
+        <button type="button" onclick="math()">CLICK FOR MATHEMATICS</button>
+        <p id="exam"></p>
+
+        <script>
+            function math() {
+                var x = 5;
+                var y = 10;
+
+                document.getElementById("exam").innerHTML = x + y;
+
+            }
+
+        </script>
+
+
+        <p>JavaScript can change HTML attribute values.</p>
+
+
+        <button onclick="document.getElementById('myImage').src='img/shodan.gif'">ON</button>
+
+        <img id="myImage" src="pic_bulboff.gif" style="width:400px; position: relative; margin-left: 200px; border: 2px solid black; border-radius: 10px;">
+
+        <button onclick="document.getElementById('myImage').src='img/shodan.gif'">OFF</button>
+
+        <h2>What Can JavaScript Do?</h2>
+
+        <p id="textEX">DEUS EX MECHANICAL APARTEID.</p>
+
+        <button type="button" onclick="document.getElementById('textEX').style.color='red'">Click Me!</button>
+
+        <h2>GIF AND CSS AND JS</h2>
+
+        <img id="metroidBa" src="img/metroid.gif" alt="gif">
+
+        <button type="button" onclick="document.getElementById('metroidBa').style.border='50px solid red'">Click Me!</button>
+
+       
+       
+<div class="demoHello">
+    <p id="Hello"></p>
+    <button onclick="Hello()">CLICK ME</button>
+    <script>
+        
+     function Hello() {
+         return "hello World";
+     }   
+    document.getElementById("Hello").innerHTML = Hello();
+    </script>
+</div>
+       
     </div>
 
 

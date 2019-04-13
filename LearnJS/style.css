@@ -556,7 +556,7 @@ td {
 #contentFunc {
     text-align: center;
     border: 5px solid green;
-    
+
 }
 
 .BlockFunction_1 {
@@ -569,4 +569,80 @@ td {
 
 h2 {
     text-align: center;
+}
+
+#typeOF {
+    text-align: center;
+}
+
+.clickBut {
+    font-family: 'AmazDooMLeft2';
+
+    font-size: 80px;
+    color: red;
+
+}
+
+.clickBut:hover {
+    color: black;
+    border: 1px solid red;
+
+    background-color: red;
+    transition: 1s;
+    box-shadow: 0 0 125px rgba(209, 50, 50, 1),
+        inset 0 0 200px rgba(173, 7, 7, 1);
+}
+
+.clickBut:active {
+    color: yellow;
+}
+
+#typeTextDOOM {
+    font-size: 100px;
+    width: 0px;
+    color: black;
+    border: 1px solid red;
+    border-radius: 50px;
+    background-color: red;
+
+    box-shadow: 0 0 125px rgba(209, 50, 50, 1),
+        inset 0 0 200px rgba(173, 7, 7, 1);
+    font-family: 'AmazDooMLeft2';
+    font-size: 130px;
+    
+    position: relative;
+    left: 420px;
+    bottom: 90px
+
+}
+
+
+
+
+@font-face {
+    font-family: 'AmazDooMLeft2';
+    font-weight: normal;
+    font-style: normal;
+    src: url(fonts/AmazDooMLeft2.ttf);
+}
+
+@font-face {
+    font-family: 'AmazDooMRight2';
+    font-weight: normal;
+    font-style: normal;
+    src: url(fonts/AmazDooMRight2.ttf);
+}
+
+#typeText {
+
+    width: 0px;
+    font-size: 100px;
+
+    color: black;
+    border: 1px solid red;
+    border-radius: 50px;
+    background-color: red;
+
+    box-shadow: 0 0 125px rgba(209, 50, 50, 1),
+        inset 0 0 200px rgba(173, 7, 7, 1);
 }

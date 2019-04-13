@@ -18,7 +18,7 @@
 <body>
 
     <div id="header">
-        <h1>  <strong style="color: orange">Массивы</strong></h1>
+        <h1> <strong style="color: orange">Массивы</strong></h1>
         <div id="sidebar">
             <div class="toggle-btn" onclick="openNav()">
             </div>
@@ -49,8 +49,8 @@
                 <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
                 <li><a class="colorUL" href="MachineLearn.html">отрисовка canvas</a>
                 </li>
-                
-                
+
+
             </ul>
 
             <img class="logoCSS" src="img/logo.png" width=194>
@@ -59,12 +59,85 @@
 
 
     <div class="container">
-      
-      
-      
-      
-      
-       </div>
+
+        <div id="typeOF">
+            <h3>(определение типа данных через метод typeof</h3>
+            <button class="clickBut" onclick="playType()">PLAY</button>
+            <button class="clickBut" onclick="playTypeDOOM()">DOOM</button>
+            <button class="clickBut" onclick="OffDOOMCard()">OFFDOOM</button>
+            <p id="typeTextDOOM"></p>
+            <p id="typeText"></p>
+
+            <script>
+                var games = ["Metroid", "DOOM", "Comand and conqer", ""];
+
+                function playType() {
+                    document.getElementById("typeText").innerHTML = games[2];
+                    document.getElementById("typeText").style.transition = "ease 2s";
+                    document.getElementById("typeText").style.width = "700px";
+                    document.getElementById("typeText").style.background = "url(img/borderLogo.png)";
+                    document.getElementById("typeText").style.color = "white";
+                    document.getElementById("typeText").style.textAlign = "center";
+                };
+
+                function playTypeDOOM() {
+                    document.getElementById("typeTextDOOM").innerHTML = games[1];
+                    document.getElementById("typeTextDOOM").style.transition = "ease 3s";
+                    document.getElementById("typeTextDOOM").style.width = "950px";
+                    document.getElementById("typeTextDOOM").style.height = "500px";
+                    document.getElementById("typeTextDOOM").style.background = "url(img/doom.jpg)";
+                    document.getElementById("typeTextDOOM").style.color = "white";
+                    document.getElementById("typeTextDOOM").style.textAlign = "center";
+
+                };
+
+                function OffDOOMCard() {
+                    document.getElementById("typeTextDOOM").style.width = "0px";
+                    document.getElementById("typeTextDOOM").style.height = "0px";
+                    document.getElementById("typeTextDOOM").innerHTML = games[3];
+                }
+            </script>
+
+
+        </div>
+
+
+        <h3>Создать массив</h3>
+        <p id="game"></p>
+
+        <button onclick="gameArr()">CLICK</button>
+        <br>
+
+        <script>
+            function gameArr() {
+                var games = ["Metroid", "DOOM", "Comand and conqer"];
+                document.getElementById("game").innerHTML = games[2];
+            }
+        </script>
+
+
+        <h3>создать объект</h3>
+
+        <p id="age"></p>
+        <button onclick="AgeFunc()">CLICK</button>
+
+
+        <script>
+            function AgeFunc() {
+                var person = {
+                    firstName: "Motoko",
+                    lastName: "Kusanagi",
+                    anime: "Ghost in the shell",
+                    eyeColor: "blue"
+                };
+                document.getElementById("age").innerHTML =
+                    person.firstName + " из аниме " + person.anime;
+            }
+        </script>
+
+
+
+    </div>
 
 </body>
 
