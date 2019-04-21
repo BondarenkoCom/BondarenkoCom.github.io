@@ -82,7 +82,7 @@
 
                 function playTypeDOOM() {
                     document.getElementById("typeTextDOOM").innerHTML = games[1];
-                    document.getElementById("typeTextDOOM").style.transition = "ease 3s";
+                    document.getElementById("typeTextDOOM").style.transition = "ease 1s";
                     document.getElementById("typeTextDOOM").style.width = "950px";
                     document.getElementById("typeTextDOOM").style.height = "500px";
                     document.getElementById("typeTextDOOM").style.background = "url(img/doom.jpg)";
@@ -134,9 +134,40 @@
                     person.firstName + " из аниме " + person.anime;
             }
         </script>
+        <div class="DivMotoko">
+            <h1> JavaScript Object</h1>
+
+            <button class="buttonMot" onclick="MotokoFunc()">Вызов досье</button>
+            <div id="ObjectMotoko"></div>
+
+
+            <script>
+                var MotokoKusanagi = {
+                    firstName: "Motoko",
+                    lastName: "Kusanagi",
+                    job: "officer Police",
+                    id: 2501,
+                    image:document.getElementById("ObjectMotoko").style.background = "url(img/MotokoKusangi.jpg)",   imageSize:document.getElementById("ObjectMotoko").style.backgroundSize = "400px 400px",
+                    imageWidth:document.getElementById("ObjectMotoko").style.width = "950px",
+                    imageHeight:document.getElementById("ObjectMotoko").style.height = "500px"
+                };
+
+                function MotokoFunc() {
+                    document.getElementById("ObjectMotoko").innerHTML = 
+                    MotokoKusanagi.firstName + "<br>" + 
+                    MotokoKusanagi.lastName + "<br>" +
+                    MotokoKusanagi.job + "<br>" +
+                    MotokoKusanagi.id + "<br>" ;
+                   };
+                
+                
+                
+               
+            </script>
 
 
 
+        </div>
     </div>
 
 </body>

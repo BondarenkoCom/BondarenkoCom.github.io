@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example Script</title>
+    <script src="scriptAnimGame.js"></script>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="PlanetAnim.css" rel="stylesheet">
+    <link href="styleGrifCss.css" rel="stylesheet">
+    <meta property="og:title" content="страница анимации " />
+    <meta property="og:description" content="моя песочница." />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Animated-runner.svg/1024px-Animated-runner.svg.png" />
+</head>
+
+<body>
+    <div id="header">
+        <h1>Примеры кода на <strong style="color: lightgreen">CSS GRID</strong></h1>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="openNav()">
+            </div>
+            <ul>
+                <li><a class="colorUL" href="index.html">MENU</a> </li>
+                <li><a class="colorUL" href="variable.html">знакомства с переменныими</a></li>
+                <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
+
+                <li><a class="colorUL" href="operators.html">операторы</a></li>
+
+                <li><a class="colorUL" href="example.html">примеры</a></li>
+
+                <li><a class="colorUL" href="function.html">функции</a></li>
+
+                <li><a class="colorUL" href="array.html">массивы</a></li>
+                <li><a class="colorUL" href="mathJavaScript.html">немного математики</a></li>
+
+
+            </ul>
+
+        </div>
+
+        <div id="sidebarCSS">
+            <div class="toggle-btn" onclick="openNavCSS()">
+
+            </div>
+            <ul>
+                <li>CSS</li>
+                <li><a class="colorUL" href="#">основы</a></li>
+                <li><a class="colorUL" href="animation.html">Анимация</a></li>
+                <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
+                <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
+                <li><a class="colorUL" href="ExGridCSS.html">CSS GRID</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div id="content">
+
+        <div id="canvasSpace">
+            <button onclick="shotGreenBeam()">SHOT</button>
+            <div id="gridExOne">
+                <img id="ship" src="img/space_ship02.gif" alt="ship">
+                <img id="ridley" src="img/ridley.gif" alt="ridley">
+                <img id="ShotOne" src="img/K5oa7.gif" alt="shot">
+            </div>
+
+            <div id="KeyboardEvent">
+                <h1>контроль клавиатуры</h1>
+                <!-- подготовка обработчика события -->
+                <div id="result">нажми на клавиатуре</div>
+
+                <script>
+                    //создание функции и события (event)
+                    function keyDown(event) {
+                        document.getElementById("result").innerHTML = "нажата: " + event.keyCode;
+                    }
+
+                    function keyUp(event) {
+                        document.getElementById("result").innerHTML = "отпущена: " + event.keyCode;
+
+                    }
+                    document.body.onkeydown = keyDown;
+                    document.body.onkeyup = keyUp;
+                </script>
+
+            </div>
+
+
+            <div id="canvasFight">
+                <button onclick="battleFunc()" style="width: 40px; height: 20px;">FIGHT</button>
+                <img id="mechaGirlAxe" src="img/mechaGirl.gif" alt="axeGirl">
+
+            </div>
+
+        </div>
+
+       
+    </div>
+
+
+
+
+</body>
+
+</html>

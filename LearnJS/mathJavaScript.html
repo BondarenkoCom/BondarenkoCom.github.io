@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Example Script</title>
+    
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="PlanetAnim.css" rel="stylesheet">
+    
+    <meta property="og:title" content="страница анимации " />
+    <meta property="og:description" content="моя песочница." />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Animated-runner.svg/1024px-Animated-runner.svg.png" />
+</head>
+
+<body>
+    <div id="header">
+        <h1>Примеры кода с математикой</h1>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="openNav()">
+            </div>
+            <ul>
+                <li><a class="colorUL" href="index.html">MENU</a> </li>
+                <li><a class="colorUL" href="variable.html">знакомства с переменныими</a></li>
+                <li><a class="colorUL" href="ouput.html">командны вывода</a></li>
+
+                <li><a class="colorUL" href="operators.html">операторы</a></li>
+
+                <li><a class="colorUL" href="example.html">примеры</a></li>
+
+                <li><a class="colorUL" href="function.html">функции</a></li>
+
+                <li><a class="colorUL" href="array.html">массивы</a></li>
+                <li><a class="colorUL" href="mathJavaScript.html">немного математики</a></li>
+
+            </ul>
+
+        </div>
+
+        <div id="sidebarCSS">
+            <div class="toggle-btn" onclick="openNavCSS()">
+
+            </div>
+            <ul>
+                <li>CSS</li>
+                <li><a class="colorUL" href="#">основы</a></li>
+                <li><a class="colorUL" href="animation.html">Анимация</a></li>
+                <li><a class="colorUL" href="cube.html">3D КУБ</a></li>
+                <li><a class="colorUL" href="seaBattle.html">морской бой v1</a></li>
+                <li><a class="colorUL" href="ExGridCSS.html">CSS GRID</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+    <div id="content">
+        <div id="factorial">
+            <h1>факториал</h1>
+            <button class="buttonMath" onclick="funcMathFact()">жми для расчета</button>
+            
+        </div>
+    </div>
+    
+    <script>
+            function moveon() {
+                var answer = confirm("«Больше человек, чем сам человек»?"); // задать вопрос черех метод confirm
+                if (answer) window.location = "http://images.retinex.net/archive/image246922.jpg"; //вызов модального окна 
+            }
+            setTimeout(moveon, 600);
+        </script>
+    </body>
+</html>

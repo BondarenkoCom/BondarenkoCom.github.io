@@ -1,0 +1,63 @@
+#gridExOne {
+    margin-left: 25px;
+    margin-top: 20px;
+    background: url(img/backspace.gif);
+    background-size: cover;
+    width:900px;
+    height: 500px;
+    border: 10px  solid orange;
+     border-radius: 40px;
+    
+    display: grid; /* блок grid родительский элемент */
+    grid-template-columns: 20% 20% 20% 20% 20%;  /* построение сетки по вертикали */
+    grid-template-rows: 20% 20% 20% 20% 20%;/* построение сетки по горизонтали */
+}
+
+
+#ship {
+    grid-column-start:1; /* расположить корабль на втором столбце */
+    grid-row-start:2; /* расположить корабль на второй линии */
+    
+    width: 120%;
+    height: 130%;
+}
+
+#ridley {
+     width: 260px;
+     grid-column-start:4;    
+     grid-row-start:2;
+     transform:rotateY(150deg);  
+     
+}
+
+#ShotOne {
+     width: 230px;
+     grid-column-start:2;    
+     grid-row-start:2;
+     transform:rotateY(150deg);  
+    
+    
+}
+
+#canvasFight {
+    background: url(img/backFight.gif);
+    background-size: contain;
+    
+    width: 760px;
+    height: 483px;
+    
+    display: grid; /* блок grid родительский элемент */
+    grid-template-columns: 20% 20% 20% 20%;  /* построение сетки по вертикали */
+    grid-template-rows: 20% 20% 20% 20%;/* построение сетки по горизонтали */
+    
+}
+
+#mechaGirlAxe {
+    width: 216px;
+    height: 290px;
+    position: relative;
+    left: 90px;
+    
+    grid-column-start: 4;
+    grid-row-start: 3;
+}

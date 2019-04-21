@@ -646,3 +646,49 @@ h2 {
     box-shadow: 0 0 125px rgba(209, 50, 50, 1),
         inset 0 0 200px rgba(173, 7, 7, 1);
 }
+
+.DivMotoko {
+    text-align: left;
+    
+}
+.buttonMot {
+    font-size: 20px;
+    
+}
+
+#ObjectMotoko  {
+   
+    font-size: 30px;
+   
+}
+
+.buttonMot:hover {
+   cursor:pointer;
+}
+
+
+/* mathHTML */
+
+.buttonMath {
+    color: orange;
+    width: 400px;
+    height: 150px;
+    
+    border-radius:90px;
+    background: url(img/NqUX6hS.gif);
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+    font-size: 20px;
+
+}
+
+.buttonMath:hover {
+    color: red;
+    cursor: pointer;
+    
+    transform: rotate(10deg);
+   
+    transition: 2s;
+      
+}
